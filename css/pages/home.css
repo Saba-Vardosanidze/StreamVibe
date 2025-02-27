@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url(../../fonts/Manrope-Regular.ttf);
+}
+body {
+  font-family: "Manrope", Helvetica, sans-serif;
+  background-color: gray;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 24px 80px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.headerUl {
+  display: flex;
+  justify-content: center;
+  padding: 12px 20px;
+  background: rgba(8, 8, 8, 0.4);
+  border-radius: 20px;
+}
+
+.headerUl ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.headerUl ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 8px 16px;
+  transition: 0.3s ease;
+}
+.headerUl ul li a:hover,
+.headerUl ul li a.active,
+.headerUl ul li a:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.headerIcons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.headerIcons img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.headerIcons img:hover {
+  opacity: 0.7;
+}
