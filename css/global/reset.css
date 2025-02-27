@@ -1,10 +1,10 @@
 :root {
   /* colors */
-  --color-btn-hover: #262626;
-  --color-buttons: #e50000;
-  --color-plan-card-bg: #262626;
-  --color-header-footer-bg: #0f0f0f;
-  --color-pharagraf: #999999;
+  --colorButtons: #e50000;
+  --colorPlanCardBg: #1a1a1a;
+  --colorHeaderFooterBg: #0f0f0f;
+  --colorPharagraf: #999999;
+  --headerLetters: #bfbfbf;
 }
 
 /* CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
