@@ -1,20 +1,10 @@
 :root {
   /* colors */
-
-  --color-light-blue: red;
-  --color-light-blue-2: 143, 199, 255;
-  --color-blue: 6, 114, 221;
-  --color-blue-1: 81, 168, 255;
-  --color-blue-2: 0, 92, 184;
-
-  --color-white: 253, 253, 253;
-  --color-black: 7, 7, 7;
-
-  --color-gray: 119, 119, 119;
-  --color-gray-2: 237, 237, 237;
-
-  --color-green: 19, 137, 0;
-  --color-red: 229, 0, 0;
+  --color-btn-hover: #262626;
+  --color-buttons: #e50000;
+  --color-plan-card-bg: #262626;
+  --color-header-footer-bg: #0f0f0f;
+  --color-pharagraf: #999999;
 }
 
 /* CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
