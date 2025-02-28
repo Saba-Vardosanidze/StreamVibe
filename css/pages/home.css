@@ -1,14 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-@font-face {
-  font-family: "Manrope";
-  src: url(../../fonts/Manrope-Regular.ttf);
-}
 body {
-  font-family: "Manrope", Helvetica, sans-serif;
   background-color: gray;
 }
 
@@ -32,8 +22,9 @@ header {
   display: flex;
   justify-content: center;
   padding: 12px 20px;
-  background: rgba(8, 8, 8, 0.4);
-  border-radius: 20px;
+  background: var(--colorHeaderFooterBg);
+  border-radius: 10px;
+  border: 4px solid var(--colorPlanCardBg);
 }
 
 .headerUl ul {
