@@ -1,0 +1,61 @@
+body {
+  font-family: "Manrope", Courier, monospace;
+}
+
+header {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 80px;
+  margin: 0 auto;
+}
+header .headerUl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorHeaderFooterBg);
+  border-radius: 12px;
+  width: 450px;
+  height: 61px;
+  border: 4px solid var(--colorPlanCardBg);
+}
+.headerUl ul {
+  display: flex;
+  list-style: none;
+  gap: 2px;
+}
+.headerUl ul li a {
+  text-decoration: none;
+
+  transition: background 0.3s ease;
+  border-radius: 8px;
+  color: var(--textColor);
+  font-size: 13px;
+  line-height: 21px;
+  padding: 12px 20px;
+}
+.headerUl ul li a:hover,
+.headerUl ul li a.active,
+.headerUl ul li a:focus {
+  background-color: var(--colorPlanCardBg);
+  color: var(--colorWhite);
+}
+.headerIcons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 18px;
+  width: 167px;
+}
+.headerIcons img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.headerIcons img:hover {
+  opacity: 0.7;
+}
