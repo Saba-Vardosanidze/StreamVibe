@@ -2,11 +2,15 @@
   /* colors */
   --colorButtons: #e50000;
   --colorPlanCardBg: #1a1a1a;
+  --bodyBackgroundColor: #1f1f1f;
   --colorHeaderFooterBg: #0f0f0f;
   --colorPharagraf: #999999;
   --headerLetters: #bfbfbf;
   --colorWhite: #ffffff;
   --textColor: #e4e4e7;
+  --websiteBackgroundColor: #141414;
+  --buttonHover: #e50000;
+  --cardBackgroundColor: #262626;
 }
 @font-face {
   font-family: "Manrope";
