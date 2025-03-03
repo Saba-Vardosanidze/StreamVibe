@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StreamVibe</title>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <link rel="stylesheet" href="css/global/reset.css" />
     <link rel="stylesheet" href="css/global/common.css" />
     <link rel="stylesheet" href="css/pages/home.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="js/global/common.js" defer></script>
     <script src="js/pages/home.js" defer></script>
     <link rel="icon" type="image/png" href="pages/img/png/LogoFavicon.png" />
@@ -18,7 +19,7 @@
         <div class="headerContainer">
           <header>
             <div class="logo">
-              <a href="#"
+              <a href="index.html"
                 ><img
                   src="/pages/img/svg/header/logoStreamVibe.svg"
                   alt="StreamVibe"
@@ -44,7 +45,7 @@
         </div>
       </div>
       <main class="main">
-        <div class="sliderMaincContaienr">
+        <div class="sliderMainContaienr">
           <div class="sliderTopMainContainer">
             <div class="sliderTopContainer">
               <h2>Explore our wide variety of categories</h2>
@@ -54,10 +55,12 @@
               </p>
             </div>
             <div class="sliderArrowContainer">
-              <button><img src="pages/img/svg/arrow.svg" alt="prev" /></button>
+              <button id="prev">
+                <img src="pages/img/svg/arrow.svg" alt="prev" />
+              </button>
               <div class="embla__dots scrolFocus"></div>
               <div class="embla__dots scrolFocus"></div>
-              <button>
+              <button id="next">
                 <img
                   class="nextButton"
                   src="pages/img/svg/arrow.svg"
@@ -67,9 +70,9 @@
             </div>
           </div>
           <div class="embla">
-            <div class="embla__container maincSlideCardContainer">
-              <div class="embla__slide sliderBottomContainer">
-                <div class="Slidercard">
+            <div class="embla__container">
+              <div class="embla__slide">
+                <div class="Slidercard" data-aos="fade-up" data-aos-delay="200">
                   <div class="photoContainer">
                     <img
                       src="pages/img/png/MoviesForFirstCard.png"
@@ -90,7 +93,7 @@
                 </div>
               </div>
               <div class="embla__slide">
-                <div class="Slidercard">
+                <div class="Slidercard" data-aos="fade-up" data-aos-delay="100">
                   <div class="photoContainer">
                     <img src="pages/img/png/MoviesFor2Card.png" alt="Movies" />
                     <img class="imgFog" src="pages/img/png/imgFog.png" />
@@ -108,7 +111,7 @@
                 </div>
               </div>
               <div class="embla__slide">
-                <div class="Slidercard">
+                <div class="Slidercard" data-aos="fade-up" data-aos-delay="0">
                   <div class="photoContainer">
                     <img src="pages/img/png/MoviesFor3Card.png" alt="Movies" />
                     <img class="imgFog" src="pages/img/png/imgFog.png" />
@@ -126,7 +129,7 @@
                 </div>
               </div>
               <div class="embla__slide">
-                <div class="Slidercard">
+                <div class="Slidercard" data-aos="fade-up" data-aos-delay="100">
                   <div class="photoContainer">
                     <img src="pages/img/png/MoviesFor4Card.png" alt="Movies" />
                     <img class="imgFog" src="pages/img/png/imgFog.png" />
@@ -144,7 +147,7 @@
                 </div>
               </div>
               <div class="embla__slide">
-                <div class="Slidercard">
+                <div class="Slidercard" data-aos="fade-up" data-aos-delay="200">
                   <div class="photoContainer">
                     <img src="pages/img/png/MoviesFor5Card.png" alt="Movies" />
                     <img class="imgFog" src="pages/img/png/imgFog.png" />
@@ -163,7 +166,7 @@
               </div>
               <div class="embla__slide">
                 <div class="Slidercard">
-                  <div class="photoContainer">
+                  <div class="photoContainer photoContainerSecondEmbla">
                     <img
                       class="FantasticAndSerialGanre"
                       src="pages/img/png/MoviesFor6Card.png"
@@ -185,7 +188,7 @@
               </div>
               <div class="embla__slide">
                 <div class="Slidercard">
-                  <div class="photoContainer">
+                  <div class="photoContainer photoContainerSecondEmbla">
                     <img
                       class="FantasticAndSerialGanre"
                       src="pages/img/png/Mystery.png"
@@ -207,7 +210,7 @@
               </div>
               <div class="embla__slide">
                 <div class="Slidercard">
-                  <div class="photoContainer">
+                  <div class="photoContainer photoContainerSecondEmbla">
                     <img
                       class="FantasticAndSerialGanre"
                       src="pages/img/png/Thriller.png"
@@ -229,7 +232,7 @@
               </div>
               <div class="embla__slide">
                 <div class="Slidercard">
-                  <div class="photoContainer">
+                  <div class="photoContainer photoContainerSecondEmbla">
                     <img
                       class="FantasticAndSerialGanre"
                       src="pages/img/png/War.png"
@@ -249,11 +252,34 @@
                   </div>
                 </div>
               </div>
+              <div class="embla__slide SuperheroContainer">
+                <div class="Slidercard">
+                  <div class="photoContainer photoContainerSecondEmbla">
+                    <img
+                      class="FantasticAndSerialGanre"
+                      src="pages/img/png/hero.png"
+                      alt="Movies"
+                    />
+                    <img class="imgFog" src="pages/img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <p>Superhero</p>
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="pages/img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/pages/home.js"></script>
   </body>
 </html>
