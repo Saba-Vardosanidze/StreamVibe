@@ -26,4 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (prevMedia) prevMedia.addEventListener("click", () => embla.scrollPrev());
   if (nextMedia) nextMedia.addEventListener("click", () => embla.scrollNext());
+
+  const dots = document.querySelectorAll(".embla__dot");
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      const slidesPerPage = 5;
+      const slideIndex = index * slidesPerPage;
+
+      embla.scrollTo(slideIndex);
+    });
+  });
 });

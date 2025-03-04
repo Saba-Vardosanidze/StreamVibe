@@ -86,7 +86,6 @@ main .embla {
 }
 .embla .embla__container {
   display: flex;
-  height: 282px;
   gap: 20px;
 }
 .sliderMainContaienr .sliderTopContainer {
@@ -148,6 +147,9 @@ main .embla {
   background-color: var(--colorPlanCardBg);
   border-radius: 100px;
   cursor: pointer;
+}
+.sliderArrowContainer .embla__dot:active {
+  background-color: var(--colorButtons);
 }
 .sliderArrowContainer button {
   width: 44px;
