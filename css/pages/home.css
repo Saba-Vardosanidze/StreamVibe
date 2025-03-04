@@ -1,13 +1,12 @@
 body {
   font-family: "Manrope", Courier, monospace;
-  background-color: var(--bodyBackgroundColor);
 }
 .mainContainer {
   max-width: 1440px;
   padding: 18px 80px 0px;
   height: auto;
-  background-color: var(--websiteBackgroundColor);
   margin: 0 auto;
+  background-color: var(--websiteBackgroundColor);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -67,8 +66,9 @@ header .headerUl {
 }
 main .sliderTopMainContainer {
   display: flex;
-  gap: 80px;
   align-items: end;
+  width: 1279px;
+  justify-content: space-between;
 }
 main .sliderMainContaienr {
   height: 418px;
@@ -157,7 +157,7 @@ main .embla {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  transition: 400ms;
+  transition: background 400ms ease-in-out;
 }
 .sliderArrowContainer button .nextButton {
   transform: rotate(180deg);
@@ -213,79 +213,53 @@ main .embla {
     max-width: 358px;
     height: 143px;
   }
-}
-@media (max-width: 921px) {
   .sliderTopMainContainer .sliderTopContainer h2 {
     font-size: 24px;
     font-weight: bold;
     width: 358px;
     height: 72px;
   }
-}
-@media (max-width: 921px) {
   .sliderTopMainContainer .sliderTopContainer p {
     font-size: 14px;
     height: 63px;
     max-width: 358px;
   }
-}
-@media (max-width: 921px) {
   main .embla {
     max-width: 376px;
     margin: 0 auto;
   }
-}
-@media (max-width: 921px) {
   .sliderTopMainContainer {
     width: 358px;
   }
-}
-@media (max-width: 921px) {
   .sliderMainContaienr .Slidercard {
     width: 178px;
     height: 201px;
   }
-}
-@media (max-width: 921px) {
   main .sliderMainContaienr {
     gap: 40px;
   }
-}
-@media (max-width: 921px) {
   .sliderMainContaienr .Slidercard .photoContainer {
     width: 138px;
     height: 140px;
   }
-}
-@media (max-width: 921px) {
   .photoContainer img {
     width: 138px;
     height: 140px;
   }
-}
-@media (max-width: 921px) {
   .sliderMainContaienr .Slidercard .photoContainer .imgFog {
     width: 138px;
     height: 140px;
   }
-}
-@media (max-width: 921px) {
   .sliderMainContaienr .Slidercard .action {
     width: 138px;
     height: 21px;
   }
-}
-@media (max-width: 921px) {
   .sliderMainContaienr .Slidercard .action p {
     font-size: 14px;
   }
-}
-@media (max-width: 921px) {
   .sliderArrowContainer.sliderArrowContainerMedaiQuere {
     display: flex;
   }
-}
-@media (max-width: 921px) {
   .sliderArrowContainer {
     display: none;
   }
