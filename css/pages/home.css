@@ -74,4 +74,9 @@ header .headerUl {
   margin: 0 auto;
   background-image: url(../../pages/img/png/heroBackground.png);
   background-size: cover;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 20, 20, 0) 0%,
+    rgba(20, 20, 20, 1) 100%
+  );
 }
