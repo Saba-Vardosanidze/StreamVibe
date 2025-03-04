@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/pages/home.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" href="pages/img/png/LogoFavicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
   </head>
   <body>
     <div class="mainContainer">
@@ -23,13 +27,16 @@
                   alt="StreamVibe"
               /></a>
             </div>
-            <nav class="headerUl">
+            <nav class="headerUl navMenu" id="nav-menu">
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Movies & Shows</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Subscriptions</a></li>
               </ul>
+              <div class="navClose" id="nav-close">
+                <i style="color: white" class="ri-close-large-line"></i>
+              </div>
             </nav>
             <div class="headerIcons">
               <button>
@@ -38,6 +45,9 @@
               <button>
                 <img src="pages/img/svg/header/bell.svg" alt="bell" />
               </button>
+            </div>
+            <div class="menuIcon" id="nav-toggle">
+              <img src="pages/img/svg/burgermenu.svg" alt="burgerMenu" />
             </div>
           </header>
         </div>
