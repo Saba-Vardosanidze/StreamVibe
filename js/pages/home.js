@@ -20,4 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "ArrowRight") embla.scrollNext();
     if (event.key === "ArrowLeft") embla.scrollPrev();
   });
+
+  const prevMedia = document.getElementById("prevmedia");
+  const nextMedia = document.getElementById("nextmedia");
+
+  if (prevMedia) prevMedia.addEventListener("click", () => embla.scrollPrev());
+  if (nextMedia) nextMedia.addEventListener("click", () => embla.scrollNext());
 });

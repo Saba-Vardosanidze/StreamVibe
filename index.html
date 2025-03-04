@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/global/common.css" />
     <link rel="stylesheet" href="css/pages/home.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="js/global/common.js" defer></script>
-    <script src="js/pages/home.js" defer></script>
     <link rel="icon" type="image/png" href="pages/img/png/LogoFavicon.png" />
   </head>
   <body>
@@ -27,7 +25,7 @@
             </div>
             <nav class="headerUl">
               <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Movies & Shows</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Subscriptions</a></li>
@@ -58,8 +56,10 @@
               <button id="prev">
                 <img src="pages/img/svg/arrow.svg" alt="prev" />
               </button>
-              <div class="embla__dots scrolFocus"></div>
-              <div class="embla__dots scrolFocus"></div>
+              <div class="embla__dots">
+                <div class="embla__dot"></div>
+                <div class="embla__dot"></div>
+              </div>
               <button id="next">
                 <img
                   class="nextButton"
@@ -276,6 +276,14 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="sliderArrowContainer sliderArrowContainerMedaiQuere">
+          <button id="prevmedia" class="prevMediaQuere">
+            <img src="pages/img/svg/arrow.svg" alt="prev" />
+          </button>
+          <button id="nextmedia" class="nextMediaQuere">
+            <img class="nextButton" src="pages/img/svg/arrow.svg" alt="next" />
+          </button>
         </div>
       </main>
     </div>
