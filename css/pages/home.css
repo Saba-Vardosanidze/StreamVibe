@@ -232,10 +232,10 @@ main .embla {
   width: 300px;
   margin: 101px auto;
   cursor: pointer;
-  transition: 1000ms ease;
+  transition: 500ms ease;
 }
 .playIconContainer:hover {
-  transform: rotate(180deg);
+  scale: 1.1;
 }
 .siteIntro {
   display: flex;
