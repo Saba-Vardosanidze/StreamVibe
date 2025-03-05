@@ -1,14 +1,13 @@
 body {
   font-family: "Manrope", Courier, monospace;
+  background-color: var(--websiteBackgroundColor);
 }
 .mainContainer {
-  max-width: 1440px;
-  padding: 18px 80px 0px;
+  width: 1440px;
+
   height: auto;
   margin: 0 auto;
   background-color: var(--websiteBackgroundColor);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 header {
   max-width: 1440px;
@@ -16,6 +15,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 18px 80px;
 }
 header .headerUl {
   display: flex;
@@ -210,6 +210,78 @@ main .embla {
   border-radius: 6px;
   left: 0;
 }
+
+/* Hero section start*/
+.heroContainer {
+  max-width: 1440px;
+  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 1) 0%,
+      rgba(20, 20, 20, 1) 17%,
+      rgba(20, 20, 20, 0.47942927170868344) 43%,
+      rgba(20, 20, 20, 1) 100%
+    ),
+    url(../../pages/img/png/herosectionbg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 836px;
+  margin-bottom: 150px;
+}
+.playIconContainer {
+  width: 300px;
+  margin: 101px auto;
+  cursor: pointer;
+  transition: 1000ms ease;
+  position: relative;
+}
+.playIconContainer:hover {
+  transform: rotate(180deg);
+}
+.playIconContainer .pauseicon {
+  position: absolute;
+  top: 50%;
+  right: 47%;
+  transform: translate(50%, -50%);
+}
+
+.siteIntro {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  margin: 0 auto;
+}
+.siteIntro h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--colorWhite);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.siteIntro p {
+  font-size: 14px;
+  text-align: center;
+  color: var(--colorPharagraf);
+}
+.whatchbtn {
+  width: 209px;
+  height: 52px;
+  background-color: var(--colorButtons);
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+.contentContainer {
+  display: flex;
+  gap: 4px;
+  width: 160px;
+  height: 21px;
+  margin: 0 auto;
+}
+.contentContainer p {
+  color: var(--colorWhite);
+}
+/* Hero section end*/
 @media (max-width: 921px) {
   .sliderTopMainContainer .sliderTopContainer {
     max-width: 358px;
