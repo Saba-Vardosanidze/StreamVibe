@@ -218,7 +218,7 @@ main .embla {
   height: 48px;
   padding: 15px 12px;
 }
-@media (max-width: 921px) {
+@media (max-width: 1024px) {
   .sliderTopMainContainer .sliderTopContainer {
     max-width: 358px;
     height: 143px;
