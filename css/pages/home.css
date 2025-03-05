@@ -240,7 +240,7 @@ main .embla {
 .siteIntro {
   display: flex;
   flex-direction: column;
-  width: 1100px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 .siteIntro h2 {
