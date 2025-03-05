@@ -64,6 +64,15 @@ header .headerUl {
 .headerIcons img:hover {
   opacity: 0.7;
 }
+header .menuIcon {
+  display: none;
+  background-color: var(--colorPlanCardBg);
+  border-radius: 6px;
+  border: 3px solid var(--cardBackgroundColor);
+  width: 48px;
+  height: 48px;
+  padding: 15px 12px;
+}
 main .sliderTopMainContainer {
   display: flex;
   align-items: end;
@@ -278,16 +287,6 @@ main .embla {
 }
 
 /* Hero section end*/
-@media (max-width: 921px) {
-.menuIcon {
-  display: none;
-  background-color: var(--colorPlanCardBg);
-  border-radius: 6px;
-  border: 3px solid var(--cardBackgroundColor);
-  width: 48px;
-  height: 48px;
-  padding: 15px 12px;
-}
 @media (max-width: 1024px) {
   .sliderTopMainContainer .sliderTopContainer {
     max-width: 358px;
@@ -357,7 +356,7 @@ main .embla {
   header .headerIcons {
     display: none;
   }
-  .menuIcon {
+  header .menuIcon {
     display: block;
   }
 }
