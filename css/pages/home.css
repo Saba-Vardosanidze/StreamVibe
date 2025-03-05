@@ -233,18 +233,10 @@ main .embla {
   margin: 101px auto;
   cursor: pointer;
   transition: 1000ms ease;
-  position: relative;
 }
 .playIconContainer:hover {
   transform: rotate(180deg);
 }
-.playIconContainer .pauseicon {
-  position: absolute;
-  top: 50%;
-  right: 47%;
-  transform: translate(50%, -50%);
-}
-
 .siteIntro {
   display: flex;
   flex-direction: column;
@@ -270,6 +262,7 @@ main .embla {
   margin: 0 auto;
   margin-top: 40px;
   border-radius: 8px;
+  transition: all 0.5s ease;
 }
 .contentContainer {
   display: flex;
@@ -281,6 +274,11 @@ main .embla {
 .contentContainer p {
   color: var(--colorWhite);
 }
+.whatchbtn:hover {
+  scale: 1.1;
+  background-color: var(--colorWatchBtnHover);
+}
+
 /* Hero section end*/
 @media (max-width: 921px) {
   .sliderTopMainContainer .sliderTopContainer {
