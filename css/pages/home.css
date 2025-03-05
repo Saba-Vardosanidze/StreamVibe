@@ -424,3 +424,78 @@ main .embla {
     display: none;
   }
 }
+
+@media (max-width: 390px) {
+  header {
+    max-width: 390px;
+    height: auto;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerUl {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .headerIcons {
+    display: none;
+  }
+
+  .navMenu ul {
+    width: 390px;
+    position: fixed;
+
+    top: 185px;
+    height: 870px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: left 0.4s;
+
+    flex-direction: column;
+    color: var(--headerLetters);
+  }
+  .showMenu {
+    max-width: 390px;
+  }
+}
+@media (max-width: 390px) {
+  .heroContainer {
+    width: 390px;
+    background: linear-gradient(
+        0deg,
+        rgba(20, 20, 20, 1) 0%,
+        rgba(20, 20, 20, 1) 17%,
+        rgba(20, 20, 20, 0.47942927170868344) 43%,
+        rgba(20, 20, 20, 1) 100%
+      ),
+      url(../../pages/img/png/herosectionbg.png);
+  }
+  .heroContainer h2 {
+    font-size: 28px;
+  }
+  .heroContainer p {
+    font-size: 14px;
+  }
+  .heroContainer img {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  .whatchbtn .contentContainer img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 390px) {
+  main {
+    max-width: 390px;
+  }
+}
