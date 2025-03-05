@@ -1,22 +1,21 @@
 :root {
   /* colors */
-
-  --color-light-blue: red;
-  --color-light-blue-2: 143, 199, 255;
-  --color-blue: 6, 114, 221;
-  --color-blue-1: 81, 168, 255;
-  --color-blue-2: 0, 92, 184;
-
-  --color-white: 253, 253, 253;
-  --color-black: 7, 7, 7;
-
-  --color-gray: 119, 119, 119;
-  --color-gray-2: 237, 237, 237;
-
-  --color-green: 19, 137, 0;
-  --color-red: 229, 0, 0;
+  --colorButtons: #e50000;
+  --colorPlanCardBg: #1a1a1a;
+  --bodyBackgroundColor: #1f1f1f;
+  --colorHeaderFooterBg: #0f0f0f;
+  --colorPharagraf: #999999;
+  --headerLetters: #bfbfbf;
+  --colorWhite: #ffffff;
+  --textColor: #e4e4e7;
+  --websiteBackgroundColor: #141414;
+  --buttonHover: #e50000;
+  --cardBackgroundColor: #262626;
 }
-
+@font-face {
+  font-family: "Manrope";
+  src: url(../../assets/fonts/Manrope-Regular.ttf);
+}
 /* CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
 
 /*
