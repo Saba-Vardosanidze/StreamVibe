@@ -262,6 +262,7 @@ main .embla {
   text-align: center;
   color: var(--colorPharagraf);
 }
+
 .whatchbtn {
   width: 209px;
   height: 52px;
@@ -425,9 +426,9 @@ main .embla {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 360px) {
   header {
-    max-width: 390px;
+    max-width: 360px;
     height: auto;
     padding: 16px;
     align-items: center;
@@ -447,7 +448,7 @@ main .embla {
   }
 
   .navMenu ul {
-    width: 390px;
+    width: 360px;
     position: fixed;
 
     top: 185px;
@@ -462,12 +463,12 @@ main .embla {
     color: var(--headerLetters);
   }
   .showMenu {
-    max-width: 390px;
+    max-width: 360px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 360px) {
   .heroContainer {
-    width: 390px;
+    width: 360px;
     background: linear-gradient(
         0deg,
         rgba(20, 20, 20, 1) 0%,
@@ -475,7 +476,7 @@ main .embla {
         rgba(20, 20, 20, 0.47942927170868344) 43%,
         rgba(20, 20, 20, 1) 100%
       ),
-      url(../../pages/img/png/herosectionbg.png);
+      url(../../pages/img/png/SubContainerMobile.png);
   }
   .heroContainer h2 {
     font-size: 28px;
@@ -483,7 +484,7 @@ main .embla {
   .heroContainer p {
     font-size: 14px;
   }
-  .heroContainer img {
+  .heroContainer .playIconbg {
     margin: 0 auto;
     width: 200px;
     height: 200px;
@@ -492,10 +493,24 @@ main .embla {
     width: 24px;
     height: 24px;
   }
+
+  .responsiveText {
+    visibility: hidden;
+    position: relative;
+  }
+
+  .responsiveText::after {
+    content: "StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.";
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 360px) {
   main {
-    max-width: 390px;
+    max-width: 360px;
   }
 }
