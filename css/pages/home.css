@@ -639,3 +639,51 @@ main .embla {
     margin: 0 auto;
   }
 }
+/*  Frequently Asked Questions*/
+.FrequentlyAskedQuestions {
+  max-width: 1280px;
+  width: 100%;
+  background-color: aqua;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.FrequentlyTopCont {
+  width: 1280px;
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+.titleContainer {
+  width: 1060px;
+}
+.FrequentlyTopCont .titleContainer {
+  width: 1280;
+  display: flex;
+  flex-direction: column;
+}
+.FrequentlyTopCont .titleContainer h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--colorWhite);
+  margin-bottom: 10px;
+}
+.FrequentlyTopCont .titleContainer p {
+  color: var(--colorPharagraf);
+}
+.FrequentlyTopCont button {
+  background-color: red;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 140px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 27px;
+  margin-left: 80;
+}
