@@ -262,26 +262,21 @@ main .embla {
   color: var(--colorPharagraf);
 }
 
-.whatchbtn {
-  width: 209px;
-  height: 52px;
+.watchBtn {
   background-color: var(--colorButtons);
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px auto;
   border-radius: 8px;
   transition: all 0.5s ease;
-}
-.contentContainer {
   display: flex;
-  gap: 4px;
-  width: 160px;
-  height: 21px;
-  margin: 0 auto;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 24px;
 }
-.contentContainer p {
+
+.watchBtn p {
   color: var(--colorWhite);
 }
-.whatchbtn:hover {
+.watchBtn:hover {
   scale: 1.1;
   background-color: var(--colorWatchBtnHover);
 }
@@ -549,6 +544,7 @@ main .embla {
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;
+    max-height: 639px;
   }
   .heroContainer h2 {
     font-size: 28px;
@@ -562,9 +558,14 @@ main .embla {
     width: 200px;
     height: 200px;
   }
-  .whatchbtn .contentContainer img {
-    width: 24px;
-    height: 24px;
+  .watchBtn {
+    padding: 14px 34px;
+    width: 209px;
+    height: 52px;
+    justify-content: space-between;
+  }
+  .watchBtn p {
+    height: 21px;
   }
 
   .responsiveText {
@@ -583,8 +584,55 @@ main .embla {
   .playIconContainer {
     margin: 48px auto;
   }
+  .gridContainer {
+    margin-top: 51px;
+  }
+  .gridContainer .gridTitle {
+    height: 112px;
+  }
+  .gridContainer .gridTitle h2 {
+    font-size: 20px;
+    max-width: 340px;
+  }
+  .gridContainer .gridTitle p {
+    visibility: hidden;
+    position: relative;
+    font-size: 14px;
+  }
+  .gridContainer .gridTitle p::after {
+    content: "With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere.";
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .cardgrids .card {
+    width: 361px;
+    height: 175px;
+  }
+  .cardgrids .card img {
+    width: 24px;
+    height: 24px;
+  }
+  .cardgrids .card .icon {
+    width: 44px;
+    height: 44px;
+  }
+  .card .imgTitle {
+    margin: 24px 24px 20px 24px;
+  }
+  .card .imgTitle h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .card p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 24px;
+    max-width: 313px;
+  }
 }
-
 @media (max-width: 1025px) {
   main {
     max-width: 360px;
