@@ -539,7 +539,7 @@ main .embla {
     color: var(--headerLetters);
   }
   .showMenu {
-    max-width: 360px;
+    max-width: 100%;
   }
 }
 @media (max-width: 1025px) {
@@ -585,8 +585,9 @@ main .embla {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1025px) {
   main {
     max-width: 360px;
+    margin: 0 auto;
   }
 }
