@@ -426,7 +426,7 @@ main .embla {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1025px) {
   header {
     max-width: 360px;
     height: auto;
