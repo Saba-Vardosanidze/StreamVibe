@@ -285,7 +285,83 @@ main .embla {
   scale: 1.1;
   background-color: var(--colorWatchBtnHover);
 }
+.gridContainer {
+  margin-top: 120px;
+}
 
+.gridContainer .cardgrids {
+  display: grid;
+  max-width: 1279px;
+  grid-template-columns: repeat(auto-fit, minmax(413px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+.gridContainer .gridTitle {
+  max-width: 1279px;
+  margin: 60px auto;
+}
+.gridContainer .gridTitle h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--colorWhite);
+}
+.gridContainer .gridTitle p {
+  font-size: 16px;
+  font-weight: 400px;
+  color: var(--colorPharagraf);
+  margin-top: 10px;
+  max-width: 1129px;
+}
+.cardgrids .card {
+  width: 413px;
+  height: 230px;
+  border-radius: 10px;
+  background: linear-gradient(
+      210deg,
+      rgba(229, 0, 0, 0.09567577030812324) 0%,
+      rgba(20, 20, 20, 0) 34%
+    ),
+    #0f0f0f;
+  border: 1px solid var(--cardBackgroundColor);
+  display: flex;
+  flex-direction: column;
+}
+.cardgrids .card img {
+  width: 30px;
+  height: 30px;
+}
+.cardgrids .card .icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  border: 1px solid var(--cardBackgroundColor);
+  background-color: var(--colorPlanCardBg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .imgTitle {
+  display: flex;
+  align-items: center;
+  width: 333px;
+  height: 54px;
+  gap: 12px;
+  margin: 40px 40px 24px 40px;
+}
+.card .imgTitle h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--colorWhite);
+}
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  width: 333px;
+  margin-left: 40px;
+  color: var(--colorPharagraf);
+}
 /* Hero section end*/
 @media (max-width: 1024px) {
   .sliderTopMainContainer .sliderTopContainer {
