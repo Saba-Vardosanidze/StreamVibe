@@ -232,7 +232,6 @@ main .embla {
     url(../../pages/img/png/herosectionbg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 836px;
   margin-bottom: 150px;
 }
 .playIconContainer {
@@ -317,6 +316,7 @@ main .embla {
   }
   main .sliderMainContaienr {
     gap: 40px;
+    margin-top: 100px;
   }
   .sliderMainContaienr .Slidercard .photoContainer {
     width: 138px;
@@ -466,23 +466,20 @@ main .embla {
     max-width: 360px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 1025px) {
   .heroContainer {
     width: 360px;
-    background: linear-gradient(
-        0deg,
-        rgba(20, 20, 20, 1) 0%,
-        rgba(20, 20, 20, 1) 17%,
-        rgba(20, 20, 20, 0.47942927170868344) 43%,
-        rgba(20, 20, 20, 1) 100%
-      ),
-      url(../../pages/img/png/SubContainerMobile.png);
+    background: url(../../pages/img/png/SubContainerMobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
   }
   .heroContainer h2 {
     font-size: 28px;
   }
   .heroContainer p {
-    font-size: 14px;
+    font-size: 13px;
+    height: 63px;
   }
   .heroContainer .playIconbg {
     margin: 0 auto;
@@ -506,6 +503,9 @@ main .embla {
     top: 0;
     left: 0;
     width: 100%;
+  }
+  .playIconContainer {
+    margin: 48px auto;
   }
 }
 
