@@ -289,13 +289,13 @@ main .embla {
   margin-top: 120px;
 }
 
-.gridContainer .grid {
+.gridContainer .cardgrids {
   display: grid;
-  width: 1279px;
-  grid-template-columns: repeat(3, 1fr);
+  max-width: 1279px;
+  grid-template-columns: repeat(auto-fit, minmax(413px, 1fr));
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
   margin: 0 auto;
+  grid-gap: 20px;
 }
 .gridContainer .gridTitle {
   max-width: 1279px;
@@ -313,7 +313,7 @@ main .embla {
   margin-top: 10px;
   max-width: 1129px;
 }
-.grid .card {
+.cardgrids .card {
   width: 413px;
   height: 230px;
   border-radius: 10px;
@@ -327,11 +327,11 @@ main .embla {
   display: flex;
   flex-direction: column;
 }
-.grid .card img {
+.cardgrids .card img {
   width: 30px;
   height: 30px;
 }
-.grid .card .icon {
+.cardgrids .card .icon {
   width: 54px;
   height: 54px;
   border-radius: 10px;
