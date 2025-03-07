@@ -232,7 +232,6 @@ main .embla {
     url(../../pages/img/png/herosectionbg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 836px;
   margin-bottom: 150px;
 }
 .playIconContainer {
@@ -262,6 +261,7 @@ main .embla {
   text-align: center;
   color: var(--colorPharagraf);
 }
+
 .whatchbtn {
   width: 209px;
   height: 52px;
@@ -316,6 +316,7 @@ main .embla {
   }
   main .sliderMainContaienr {
     gap: 40px;
+    margin-top: 100px;
   }
   .sliderMainContaienr .Slidercard .photoContainer {
     width: 138px;
@@ -422,5 +423,94 @@ main .embla {
   .navToggle,
   .navClose {
     display: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  header {
+    max-width: 360px;
+    height: auto;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerUl {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .headerIcons {
+    display: none;
+  }
+
+  .navMenu ul {
+    width: 360px;
+    position: fixed;
+
+    top: 185px;
+    height: 870px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: left 0.4s;
+
+    flex-direction: column;
+    color: var(--headerLetters);
+  }
+  .showMenu {
+    max-width: 360px;
+  }
+}
+@media (max-width: 1025px) {
+  .heroContainer {
+    width: 360px;
+    background: url(../../pages/img/png/SubContainerMobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+  }
+  .heroContainer h2 {
+    font-size: 28px;
+  }
+  .heroContainer p {
+    font-size: 13px;
+    height: 63px;
+  }
+  .heroContainer .playIconbg {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  .whatchbtn .contentContainer img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .responsiveText {
+    visibility: hidden;
+    position: relative;
+  }
+
+  .responsiveText::after {
+    content: "StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.";
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .playIconContainer {
+    margin: 48px auto;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    max-width: 360px;
   }
 }
