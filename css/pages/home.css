@@ -51,7 +51,7 @@ header .headerUl {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 18px;
+
   width: 167px;
 }
 .headerIcons img {
@@ -643,20 +643,17 @@ main .embla {
 .FrequentlyAskedQuestions {
   max-width: 1280px;
   width: 100%;
-  background-color: aqua;
-  height: 600px;
+  background-color: var(--websiteBackgroundColor);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  margin-top: 180px;
 }
 .FrequentlyTopCont {
   width: 1280px;
   height: 76px;
   display: flex;
   justify-content: space-between;
-}
-.titleContainer {
-  width: 1060px;
 }
 .FrequentlyTopCont .titleContainer {
   width: 1280;
@@ -673,7 +670,7 @@ main .embla {
   color: var(--colorPharagraf);
 }
 .FrequentlyTopCont button {
-  background-color: red;
+  background-color: var(--colorButtons);
   border-radius: 6px;
   font-size: 14px;
   width: 140px;
@@ -686,4 +683,84 @@ main .embla {
   cursor: pointer;
   margin-top: 27px;
   margin-left: 80;
+  transition: all 0.5s ease;
+}
+.askQuestion:hover {
+  scale: 1.1;
+  background-color: var(--colorWatchBtnHover);
+}
+◘ .FrequentlyBottomCont {
+  display: flex;
+  width: 1280px;
+}
+.askAndQuestionCont {
+  width: 1280px;
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+.FrequentlyLeftCont {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+}
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.questionSections {
+  max-width: 620px;
+  display: flex;
+}
+.numberContainer {
+  background-color: var(--cardBackgroundColor);
+  color: var(--colorWhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 54px;
+  margin-right: 16px;
+  border-radius: 8px;
+}
+.questionCont {
+  width: 466px;
+  height: 140px;
+  position: relative;
+}
+.questionCont .question {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--colorWhite);
+  margin-bottom: 14px;
+  margin-top: 10px;
+}
+.questionCont .answer {
+  width: 466px;
+  color: var(--colorPharagraf);
+  display: none;
+}
+.active .answer {
+  display: block;
+}
+.openClosebtnCont {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 103px;
+  right: -16px;
+}
+.closeBtn {
+  position: absolute;
+  width: 24px;
+  right: 4px;
+  top: -2px;
+  display: none;
+}
+.FrequentlyRightCont {
+  display: flex;
+  width: 620px;
+  flex-direction: column;
 }

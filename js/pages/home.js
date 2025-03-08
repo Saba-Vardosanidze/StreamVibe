@@ -52,3 +52,21 @@ if (navClose) {
     navMenu.classList.remove("showMenu");
   });
 }
+
+document.querySelectorAll(".questionSections").forEach((section) => {
+  const openBtn = section.querySelector(".openBtn");
+  const closeBtn = section.querySelector(".closeBtn");
+  const answer = section.querySelector(".answer");
+
+  openBtn.addEventListener("click", () => {
+    answer.style.display = "block";
+    openBtn.style.display = "none";
+    closeBtn.style.display = "inline-block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    answer.style.display = "none";
+    closeBtn.style.display = "none";
+    openBtn.style.display = "inline-block";
+  });
+});
