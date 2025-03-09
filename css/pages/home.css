@@ -1,14 +1,13 @@
 body {
   font-family: "Manrope", Courier, monospace;
+  background-color: var(--websiteBackgroundColor);
 }
 .mainContainer {
-  max-width: 1440px;
-  padding: 18px 80px 0px;
+  width: 1440px;
+
   height: auto;
   margin: 0 auto;
   background-color: var(--websiteBackgroundColor);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 header {
   max-width: 1440px;
@@ -16,6 +15,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 18px 80px;
 }
 header .headerUl {
   display: flex;
@@ -51,7 +51,7 @@ header .headerUl {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 18px;
+
   width: 167px;
 }
 .headerIcons img {
@@ -63,6 +63,15 @@ header .headerUl {
 }
 .headerIcons img:hover {
   opacity: 0.7;
+}
+header .menuIcon {
+  display: none;
+  background-color: var(--colorPlanCardBg);
+  border-radius: 6px;
+  border: 3px solid var(--cardBackgroundColor);
+  width: 48px;
+  height: 48px;
+  padding: 15px 12px;
 }
 main .sliderTopMainContainer {
   display: flex;
@@ -209,16 +218,147 @@ main .embla {
   border-radius: 6px;
   left: 0;
 }
-.menuIcon {
-  display: none;
-  background-color: var(--colorPlanCardBg);
-  border-radius: 6px;
-  border: 3px solid var(--cardBackgroundColor);
-  width: 48px;
-  height: 48px;
-  padding: 15px 12px;
+/* Hero section start*/
+.heroContainer {
+  max-width: 1440px;
+  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 1) 0%,
+      rgba(20, 20, 20, 1) 17%,
+      rgba(20, 20, 20, 0.47942927170868344) 43%,
+      rgba(20, 20, 20, 1) 100%
+    ),
+    url(../../pages/img/png/herosectionbg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 150px;
 }
-@media (max-width: 921px) {
+.playIconContainer {
+  width: 300px;
+  margin: 101px auto;
+  cursor: pointer;
+  transition: 500ms ease;
+}
+.playIconContainer:hover {
+  scale: 1.1;
+}
+.siteIntro {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.siteIntro h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--colorWhite);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.siteIntro p {
+  font-size: 14px;
+  text-align: center;
+  color: var(--colorPharagraf);
+}
+
+.watchBtn {
+  background-color: var(--colorButtons);
+  margin: 40px auto;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 24px;
+}
+
+.watchBtn p {
+  color: var(--colorWhite);
+}
+.watchBtn:hover {
+  scale: 1.1;
+  background-color: var(--colorWatchBtnHover);
+}
+.gridContainer {
+  margin-top: 120px;
+}
+
+.gridContainer .cardgrids {
+  display: grid;
+  max-width: 1279px;
+  grid-template-columns: repeat(auto-fit, minmax(413px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+.gridContainer .gridTitle {
+  max-width: 1279px;
+  margin: 60px auto;
+}
+.gridContainer .gridTitle h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--colorWhite);
+}
+.gridContainer .gridTitle p {
+  font-size: 16px;
+  font-weight: 400px;
+  color: var(--colorPharagraf);
+  margin-top: 10px;
+  max-width: 1129px;
+}
+.cardgrids .card {
+  width: 413px;
+  height: 230px;
+  border-radius: 10px;
+  background: linear-gradient(
+      210deg,
+      rgba(229, 0, 0, 0.09567577030812324) 0%,
+      rgba(20, 20, 20, 0) 34%
+    ),
+    #0f0f0f;
+  border: 1px solid var(--cardBackgroundColor);
+  display: flex;
+  flex-direction: column;
+}
+.cardgrids .card img {
+  width: 30px;
+  height: 30px;
+}
+.cardgrids .card .icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  border: 1px solid var(--cardBackgroundColor);
+  background-color: var(--colorPlanCardBg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .imgTitle {
+  display: flex;
+  align-items: center;
+  width: 333px;
+  height: 54px;
+  gap: 12px;
+  margin: 40px 40px 24px 40px;
+}
+.card .imgTitle h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--colorWhite);
+}
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  width: 333px;
+  margin-left: 40px;
+  color: var(--colorPharagraf);
+}
+/* Hero section end*/
+@media (max-width: 1024px) {
   .sliderTopMainContainer .sliderTopContainer {
     max-width: 358px;
     height: 143px;
@@ -247,6 +387,7 @@ main .embla {
   }
   main .sliderMainContaienr {
     gap: 40px;
+    margin-top: 100px;
   }
   .sliderMainContaienr .Slidercard .photoContainer {
     width: 138px;
@@ -287,7 +428,7 @@ main .embla {
   header .headerIcons {
     display: none;
   }
-  .menuIcon {
+  header .menuIcon {
     display: block;
   }
 }
@@ -355,3 +496,277 @@ main .embla {
     display: none;
   }
 }
+
+@media (max-width: 1025px) {
+  header {
+    max-width: 360px;
+    height: auto;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerUl {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .headerIcons {
+    display: none;
+  }
+
+  .navMenu ul {
+    width: 360px;
+    position: fixed;
+
+    top: 185px;
+    height: 870px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: left 0.4s;
+
+    flex-direction: column;
+    color: var(--headerLetters);
+  }
+  .showMenu {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1025px) {
+  .heroContainer {
+    width: 360px;
+    background: url(../../pages/img/png/SubContainerMobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    max-height: 639px;
+  }
+  .heroContainer h2 {
+    font-size: 28px;
+  }
+  .heroContainer p {
+    font-size: 13px;
+    height: 63px;
+  }
+  .heroContainer .playIconbg {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  .watchBtn {
+    padding: 14px 34px;
+    width: 209px;
+    height: 52px;
+    justify-content: space-between;
+  }
+  .watchBtn p {
+    height: 21px;
+  }
+
+  .responsiveText {
+    visibility: hidden;
+    position: relative;
+  }
+
+  .responsiveText::after {
+    content: "StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.";
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .playIconContainer {
+    margin: 48px auto;
+  }
+  .gridContainer {
+    margin-top: 51px;
+  }
+  .gridContainer .gridTitle {
+    height: 112px;
+  }
+  .gridContainer .gridTitle h2 {
+    font-size: 20px;
+    max-width: 340px;
+  }
+  .gridContainer .gridTitle p {
+    visibility: hidden;
+    position: relative;
+    font-size: 14px;
+  }
+  .gridContainer .gridTitle p::after {
+    content: "With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere.";
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .cardgrids .card {
+    width: 361px;
+    height: 175px;
+  }
+  .cardgrids .card img {
+    width: 24px;
+    height: 24px;
+  }
+  .cardgrids .card .icon {
+    width: 44px;
+    height: 44px;
+  }
+  .card .imgTitle {
+    margin: 24px 24px 20px 24px;
+  }
+  .card .imgTitle h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .card p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 24px;
+    max-width: 313px;
+  }
+}
+@media (max-width: 1025px) {
+  main {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+/*  Frequently Asked Questions*/
+.FrequentlyAskedQuestions {
+  max-width: 1280px;
+  width: 100%;
+  background-color: var(--websiteBackgroundColor);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+}
+.FrequentlyTopCont {
+  width: 1280px;
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+.FrequentlyTopCont .titleContainer {
+  width: 1280;
+  display: flex;
+  flex-direction: column;
+}
+.FrequentlyTopCont .titleContainer h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--colorWhite);
+  margin-bottom: 10px;
+}
+.FrequentlyTopCont .titleContainer p {
+  color: var(--colorPharagraf);
+}
+.FrequentlyTopCont button {
+  background-color: var(--colorButtons);
+  border-radius: 6px;
+  font-size: 14px;
+  width: 140px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colorWhite);
+  border: none;
+  cursor: pointer;
+  margin-top: 27px;
+  margin-left: 80;
+  transition: all 0.5s ease;
+}
+.askQuestion:hover {
+  scale: 1.1;
+  background-color: var(--colorWatchBtnHover);
+}
+◘ .FrequentlyBottomCont {
+  display: flex;
+  width: 1280px;
+}
+.askAndQuestionCont {
+  width: 1280px;
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+.FrequentlyLeftCont {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+}
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.questionSections {
+  max-width: 620px;
+  display: flex;
+  max-height: 140px;
+}
+.numberContainer {
+  background-color: var(--cardBackgroundColor);
+  color: var(--colorWhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 54px;
+  margin-right: 16px;
+  border-radius: 8px;
+}
+.questionCont {
+  width: 466px;
+}
+.askContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questionCont .question {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--colorWhite);
+  margin-bottom: 14px;
+  margin-top: 10px;
+}
+.questionCont .answer {
+  width: 466px;
+  color: var(--colorPharagraf);
+  display: none;
+}
+.line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(229, 0, 0, 0) 0%,
+    rgba(229, 0, 0, 1) 17%,
+    rgba(229, 0, 0, 0) 100%
+  );
+}
+.openClosebtnCont {
+  width: 24px;
+  height: 24px;
+}
+.closeBtn {
+  width: 24px;
+  display: none;
+}
+.FrequentlyRightCont {
+  display: flex;
+  width: 620px;
+  flex-direction: column;
+}
+/* End of Frequently Asked Questions */
