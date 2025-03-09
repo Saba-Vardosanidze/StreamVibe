@@ -678,7 +678,7 @@ main .embla {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--colorWhite);
   border: none;
   cursor: pointer;
   margin-top: 27px;
@@ -708,11 +708,13 @@ main .embla {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  gap: 16px;
 }
 
 .questionSections {
   max-width: 620px;
   display: flex;
+  max-height: 140px;
 }
 .numberContainer {
   background-color: var(--cardBackgroundColor);
@@ -727,8 +729,11 @@ main .embla {
 }
 .questionCont {
   width: 466px;
-  height: 140px;
-  position: relative;
+}
+.askContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .questionCont .question {
   font-size: 20px;
@@ -742,21 +747,21 @@ main .embla {
   color: var(--colorPharagraf);
   display: none;
 }
-.active .answer {
-  display: block;
+.line {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(229, 0, 0, 0) 0%,
+    rgba(229, 0, 0, 1) 17%,
+    rgba(229, 0, 0, 0) 100%
+  );
 }
 .openClosebtnCont {
   width: 24px;
   height: 24px;
-  position: absolute;
-  bottom: 103px;
-  right: -16px;
 }
 .closeBtn {
-  position: absolute;
   width: 24px;
-  right: 4px;
-  top: -2px;
   display: none;
 }
 .FrequentlyRightCont {
@@ -764,3 +769,4 @@ main .embla {
   width: 620px;
   flex-direction: column;
 }
+/* End of Frequently Asked Questions */

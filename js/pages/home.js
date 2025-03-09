@@ -53,20 +53,20 @@ if (navClose) {
   });
 }
 
-document.querySelectorAll(".questionSections").forEach((section) => {
-  const openBtn = section.querySelector(".openBtn");
-  const closeBtn = section.querySelector(".closeBtn");
-  const answer = section.querySelector(".answer");
+const mainContainer = document.querySelectorAll(".questionSections");
+mainContainer.forEach((singleCard) => {
+  const openBtn = singleCard.querySelector(".openBtn");
+  const closeBtn = singleCard.querySelector(".closeBtn");
+  const answer = singleCard.querySelector(".answer");
 
   openBtn.addEventListener("click", () => {
     answer.style.display = "block";
     openBtn.style.display = "none";
-    closeBtn.style.display = "inline-block";
+    closeBtn.style.display = "block";
   });
-
   closeBtn.addEventListener("click", () => {
     answer.style.display = "none";
     closeBtn.style.display = "none";
-    openBtn.style.display = "inline-block";
+    openBtn.style.display = "block";
   });
 });
