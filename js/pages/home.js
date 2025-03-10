@@ -70,3 +70,28 @@ mainContainer.forEach((singleCard) => {
     openBtn.style.display = "block";
   });
 });
+
+const monthlyPrice = document.getElementById("monthlyPrice");
+const yearPrice = document.getElementById("yearPrice");
+const packetLimit = document.querySelectorAll(".packetDeadline");
+const basicPlan = document.getElementById("basicPlan");
+const standardPlan = document.getElementById("standardPlan");
+const premiumPlan = document.getElementById("premiumPlan");
+
+monthlyPrice.addEventListener("click", function () {
+  packetLimit.forEach((element) => {
+    element.textContent = "/month";
+  });
+  basicPlan.textContent = "$9.99";
+  standardPlan.textContent = "$12.99";
+  premiumPlan.textContent = "$14.99";
+});
+
+yearPrice.addEventListener("click", function () {
+  packetLimit.forEach((element) => {
+    element.textContent = "/year";
+  });
+  basicPlan.textContent = "$109.99";
+  standardPlan.textContent = "$144.99";
+  premiumPlan.textContent = "$169.99";
+});
