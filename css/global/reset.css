@@ -12,10 +12,11 @@
   --buttonHover: #e50000;
   --colorWatchBtnHover: #810d0d;
   --cardBackgroundColor: #262626;
+  --colorButtonsActive: #f32d2d;
 }
 @font-face {
   font-family: "Manrope";
-  src: url(../../assets/fonts/Manrope-Regular.ttf);
+  src: url("../../assets/fonts/Manrope-Regular.ttf");
 }
 /* CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
 

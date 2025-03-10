@@ -357,289 +357,6 @@ main .embla {
   margin-left: 40px;
   color: var(--colorPharagraf);
 }
-/* Hero section end*/
-@media (max-width: 1024px) {
-  .sliderTopMainContainer .sliderTopContainer {
-    max-width: 358px;
-    height: 143px;
-  }
-  .sliderTopMainContainer .sliderTopContainer h2 {
-    font-size: 24px;
-    font-weight: bold;
-    width: 358px;
-    height: 72px;
-  }
-  .sliderTopMainContainer .sliderTopContainer p {
-    font-size: 14px;
-    height: 63px;
-    max-width: 358px;
-  }
-  main .embla {
-    max-width: 376px;
-    margin: 0 auto;
-  }
-  .sliderTopMainContainer {
-    width: 358px;
-  }
-  .sliderMainContaienr .Slidercard {
-    width: 178px;
-    height: 201px;
-  }
-  main .sliderMainContaienr {
-    gap: 40px;
-    margin-top: 100px;
-  }
-  .sliderMainContaienr .Slidercard .photoContainer {
-    width: 138px;
-    height: 140px;
-  }
-  .photoContainer img {
-    width: 138px;
-    height: 140px;
-  }
-  .sliderMainContaienr .Slidercard .photoContainer .imgFog {
-    width: 138px;
-    height: 140px;
-  }
-  .sliderMainContaienr .Slidercard .action {
-    width: 138px;
-    height: 21px;
-  }
-  .sliderMainContaienr .Slidercard .action p {
-    font-size: 14px;
-  }
-  .sliderArrowContainer.sliderArrowContainerMedaiQuere {
-    display: flex;
-  }
-  .sliderArrowContainer {
-    display: none;
-  }
-  header {
-    max-width: 390px;
-    height: 102px;
-    padding: 46px 16px;
-  }
-  header .headerUl {
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    border-radius: 0px;
-  }
-  header .headerIcons {
-    display: none;
-  }
-  header .menuIcon {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .navMenu {
-    position: fixed;
-    left: -100%;
-    top: 0;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    padding: 96px 56px 72px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: left 0.4s;
-  }
-  .showMenu .navItem {
-    visibility: visible;
-    transform: translateX(0);
-  }
-  .navItem {
-    transform: translateX(-150px);
-    visibility: hidden;
-    transition: transform 0.4s ease-out, visibility 0.4s;
-  }
-  .navItem:nth-child(1) {
-    transition-delay: 0.1s;
-  }
-  .navItem:nth-child(2) {
-    transition-delay: 0.2s;
-  }
-  .navItem:nth-child(3) {
-    transition-delay: 0.3s;
-  }
-  .navItem:nth-child(4) {
-    transition-delay: 0.4s;
-  }
-  .navItem:nth-child(5) {
-    transition-delay: 0.5s;
-  }
-
-  .navMenu ul {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .navClose {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-  }
-
-  .showMenu {
-    left: 0;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .navToggle,
-  .navClose {
-    display: none;
-  }
-}
-
-@media (max-width: 1025px) {
-  header {
-    max-width: 360px;
-    height: auto;
-    padding: 16px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .headerUl {
-    display: none;
-  }
-
-  .menuIcon {
-    display: block;
-  }
-
-  .headerIcons {
-    display: none;
-  }
-
-  .navMenu ul {
-    width: 360px;
-    position: fixed;
-
-    top: 185px;
-    height: 870px;
-
-    display: flex;
-    flex-direction: column;
-
-    transition: left 0.4s;
-
-    flex-direction: column;
-    color: var(--headerLetters);
-  }
-  .showMenu {
-    max-width: 100%;
-  }
-}
-@media (max-width: 1025px) {
-  .heroContainer {
-    width: 360px;
-    background: url(../../pages/img/png/SubContainerMobile.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0 auto;
-    max-height: 639px;
-  }
-  .heroContainer h2 {
-    font-size: 28px;
-  }
-  .heroContainer p {
-    font-size: 13px;
-    height: 63px;
-  }
-  .heroContainer .playIconbg {
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-  }
-  .watchBtn {
-    padding: 14px 34px;
-    width: 209px;
-    height: 52px;
-    justify-content: space-between;
-  }
-  .watchBtn p {
-    height: 21px;
-  }
-
-  .responsiveText {
-    visibility: hidden;
-    position: relative;
-  }
-
-  .responsiveText::after {
-    content: "StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.";
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .playIconContainer {
-    margin: 48px auto;
-  }
-  .gridContainer {
-    margin-top: 51px;
-  }
-  .gridContainer .gridTitle {
-    height: 112px;
-  }
-  .gridContainer .gridTitle h2 {
-    font-size: 20px;
-    max-width: 340px;
-  }
-  .gridContainer .gridTitle p {
-    visibility: hidden;
-    position: relative;
-    font-size: 14px;
-  }
-  .gridContainer .gridTitle p::after {
-    content: "With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere.";
-    position: absolute;
-    visibility: visible;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .cardgrids .card {
-    width: 361px;
-    height: 175px;
-  }
-  .cardgrids .card img {
-    width: 24px;
-    height: 24px;
-  }
-  .cardgrids .card .icon {
-    width: 44px;
-    height: 44px;
-  }
-  .card .imgTitle {
-    margin: 24px 24px 20px 24px;
-  }
-  .card .imgTitle h3 {
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .card p {
-    font-size: 14px;
-    font-weight: 400;
-    margin-left: 24px;
-    max-width: 313px;
-  }
-}
-@media (max-width: 1025px) {
-  main {
-    max-width: 360px;
-    margin: 0 auto;
-  }
-}
-/*  Frequently Asked Questions*/
 .FrequentlyAskedQuestions {
   width: 1280px;
   background-color: var(--websiteBackgroundColor);
@@ -768,4 +485,485 @@ main .embla {
   width: 620px;
   flex-direction: column;
 }
-/* End of Frequently Asked Questions */
+.chosePlan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-top: 150px;
+}
+.chosePlan .chosePlanHeader {
+  max-width: 1280px;
+  display: flex;
+  gap: 100px;
+  align-items: end;
+}
+.chosePlan .chosePlanHeader .chosePlanTitle {
+  width: 1010px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chosePlan .chosePlanHeader .chosePlanTitle h2 {
+  color: var(--colorWhite);
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.chosePlan .chosePlanHeader .chosePlanTitle p {
+  font-weight: 400;
+  color: var(--colorPharagraf);
+}
+.chosePlan .chosePlanHeader .chosePlanButtonContainer {
+  width: 190px;
+  height: 61px;
+  border-radius: 8px;
+  border: 1px solid var(--cardBackgroundColor);
+  background-color: var(--colorHeaderFooterBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+.chosePlan .chosePlanHeader .chosePlanButtonContainer button {
+  width: 80px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colorPharagraf);
+  font-size: 14px;
+  font-weight: 500;
+}
+.chosePlan .chosePlanHeader .chosePlanButtonContainer button:focus {
+  background-color: var(--bodyBackgroundColor);
+  border-radius: 6px;
+  color: var(--colorWhite);
+}
+.chosePlan .offersMainContainer {
+  gap: 20px;
+  display: flex;
+}
+.chosePlan .offersMainContainer .usersOffersContainer {
+  width: 414px;
+  height: 345px;
+  background-color: var(--colorPlanCardBg);
+  border: 1px solid var(--cardBackgroundColor);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  transition: 300ms;
+}
+.chosePlan .offersMainContainer .usersOffersContainer:hover {
+  border: 1px solid var(--colorButtons);
+  box-shadow: #e50000 0px 1px 0px, #810d0d 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.chosePlan .offersMainContainer .usersOffersContainer .offerType {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 40px;
+}
+.chosePlan .offersMainContainer .usersOffersContainer .offerType h3 {
+  color: var(--colorWhite);
+  font-weight: 700;
+  font-size: 20px;
+}
+.chosePlan .offersMainContainer .usersOffersContainer .offerType p {
+  font-weight: 400;
+  color: var(--colorPharagraf);
+  max-width: 334px;
+}
+.chosePlan .offersMainContainer .usersOffersContainer .price {
+  display: flex;
+  margin-left: 40px;
+  align-items: end;
+}
+.chosePlan .offersMainContainer .usersOffersContainer .price .packetPrice {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--colorWhite);
+}
+.chosePlan .offersMainContainer .usersOffersContainer .price span {
+  font-weight: 500;
+  color: var(--colorPharagraf);
+  font-size: 16px;
+  margin-left: 2px;
+}
+.offersMainContainer .usersOffersContainer .chooseButton {
+  margin-left: 40px;
+  width: 334px;
+  display: flex;
+  justify-content: space-between;
+}
+.usersOffersContainer .chooseButton button {
+  width: 160px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.usersOffersContainer .chooseButton .buttonForFreeTrial {
+  border: 1px solid var(--cardBackgroundColor);
+  background-color: var(--websiteBackgroundColor);
+  color: var(--colorWhite);
+  font-size: 14px;
+  border-radius: 6px;
+  transition: 300ms;
+}
+.usersOffersContainer .chooseButton .buttonForFreeTrial:active {
+  background-color: var(--colorPharagraf);
+}
+.usersOffersContainer .chooseButton .premiumPacketOrderBtn {
+  background-color: var(--colorButtons);
+  color: var(--colorWhite);
+  font-size: 14px;
+  border-radius: 6px;
+  transition: 300ms;
+}
+.usersOffersContainer .chooseButton .premiumPacketOrderBtn:hover {
+  background-color: var(--colorWatchBtnHover);
+}
+.usersOffersContainer .chooseButton .premiumPacketOrderBtn:active {
+  background-color: var(--colorButtonsActive);
+  transition: 100ms;
+}
+/* mediaQueryPart */
+@media screen and (min-width: 1025px) {
+  .navToggle,
+  .navClose {
+    display: none;
+  }
+}
+@media (max-width: 1025px) {
+  .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 96px 56px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 0.4s;
+  }
+  .showMenu .navItem {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .navItem {
+    transform: translateX(-150px);
+    visibility: hidden;
+    transition: transform 0.4s ease-out, visibility 0.4s;
+  }
+  .navItem:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .navItem:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .navItem:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .navItem:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .navItem:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+
+  .navMenu ul {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .navClose {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .showMenu {
+    left: 0;
+  }
+  .heroContainer {
+    width: 360px;
+    background: url(../../pages/img/png/SubContainerMobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    max-height: 639px;
+  }
+  .heroContainer h2 {
+    font-size: 28px;
+  }
+  .heroContainer p {
+    font-size: 13px;
+    height: 63px;
+  }
+  .heroContainer .playIconbg {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  .watchBtn {
+    padding: 14px 34px;
+    width: 209px;
+    height: 52px;
+    justify-content: space-between;
+  }
+  .watchBtn p {
+    height: 21px;
+  }
+
+  .responsiveText {
+    visibility: hidden;
+    position: relative;
+  }
+  main {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .sliderTopMainContainer .sliderTopContainer {
+    max-width: 358px;
+    height: 143px;
+  }
+  .sliderTopMainContainer .sliderTopContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    width: 358px;
+    height: 72px;
+  }
+  .sliderTopMainContainer .sliderTopContainer p {
+    font-size: 14px;
+    height: 63px;
+    max-width: 358px;
+  }
+  main .embla {
+    max-width: 376px;
+    margin: 0 auto;
+  }
+  .sliderTopMainContainer {
+    width: 358px;
+  }
+  .sliderMainContaienr .Slidercard {
+    width: 178px;
+    height: 201px;
+  }
+  main .sliderMainContaienr {
+    gap: 40px;
+    margin-top: 100px;
+  }
+  .sliderMainContaienr .Slidercard .photoContainer {
+    width: 138px;
+    height: 140px;
+  }
+  .photoContainer img {
+    width: 138px;
+    height: 140px;
+  }
+  .sliderMainContaienr .Slidercard .photoContainer .imgFog {
+    width: 138px;
+    height: 140px;
+  }
+  .sliderMainContaienr .Slidercard .action {
+    width: 138px;
+    height: 21px;
+  }
+  .sliderMainContaienr .Slidercard .action p {
+    font-size: 14px;
+  }
+  .sliderArrowContainer.sliderArrowContainerMedaiQuere {
+    display: flex;
+  }
+  .sliderArrowContainer {
+    display: none;
+  }
+  header {
+    max-width: 390px;
+    height: 102px;
+    padding: 46px 16px;
+  }
+  header .headerUl {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-radius: 0px;
+  }
+  header .headerIcons {
+    display: none;
+  }
+  header .menuIcon {
+    display: block;
+  }
+  .responsiveText::after {
+    content: "StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.";
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .playIconContainer {
+    margin: 48px auto;
+  }
+  .gridContainer {
+    margin-top: 51px;
+  }
+  .gridContainer .gridTitle {
+    height: 112px;
+  }
+  .gridContainer .gridTitle h2 {
+    font-size: 20px;
+    max-width: 340px;
+  }
+  .gridContainer .gridTitle p {
+    visibility: hidden;
+    position: relative;
+    font-size: 14px;
+  }
+  .gridContainer .gridTitle p::after {
+    content: "With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere.";
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .cardgrids .card {
+    width: 361px;
+    height: 175px;
+  }
+  .cardgrids .card img {
+    width: 24px;
+    height: 24px;
+  }
+  .cardgrids .card .icon {
+    width: 44px;
+    height: 44px;
+  }
+  .card .imgTitle {
+    margin: 24px 24px 20px 24px;
+  }
+  .card .imgTitle h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .card p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 24px;
+    max-width: 313px;
+  }
+  header {
+    max-width: 360px;
+    height: auto;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerUl {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .headerIcons {
+    display: none;
+  }
+
+  .navMenu ul {
+    width: 360px;
+    position: fixed;
+
+    top: 185px;
+    height: 870px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: left 0.4s;
+
+    flex-direction: column;
+    color: var(--headerLetters);
+  }
+  .showMenu {
+    max-width: 100%;
+  }
+  .chosePlan .chosePlanHeader {
+    width: 358px;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .chosePlan .chosePlanHeader .chosePlanTitle {
+    width: 358px;
+  }
+  .chosePlan .chosePlanHeader .chosePlanTitle h2 {
+    width: 340px;
+    font-size: 24px;
+  }
+  .chosePlan .chosePlanHeader .chosePlanTitle p {
+    font-weight: 400;
+    font-size: 14px;
+    width: 358px;
+  }
+  .chosePlan {
+    margin-top: 80px;
+    gap: 40px;
+  }
+  .chosePlan .offersMainContainer {
+    flex-direction: column;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer {
+    width: 358px;
+    height: 275px;
+    gap: 25px;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .offerType {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 24px;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .offerType h3 {
+    color: var(--colorWhite);
+    font-size: 18px;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .offerType p {
+    font-weight: 400;
+    font-size: 14px;
+    width: 310px;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .price {
+    margin-left: 24px;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .price .packetPrice {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .price span {
+    font-size: 16px;
+    margin-left: 2px;
+    font-size: 14px;
+  }
+  .offersMainContainer .usersOffersContainer .chooseButton {
+    margin-left: 24px;
+    width: 310px;
+  }
+  .usersOffersContainer .chooseButton button {
+    width: 149px;
+    height: 49px;
+  }
+}
