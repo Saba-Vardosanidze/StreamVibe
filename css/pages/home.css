@@ -632,9 +632,6 @@ main .embla {
   transition: 100ms;
 }
 /* mediaQueryPart */
-@media (max-width: 1024px) {
-}
-
 @media screen and (min-width: 1025px) {
   .navToggle,
   .navClose {
