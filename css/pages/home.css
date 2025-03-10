@@ -357,289 +357,6 @@ main .embla {
   margin-left: 40px;
   color: var(--colorPharagraf);
 }
-/* Hero section end*/
-@media (max-width: 1024px) {
-  .sliderTopMainContainer .sliderTopContainer {
-    max-width: 358px;
-    height: 143px;
-  }
-  .sliderTopMainContainer .sliderTopContainer h2 {
-    font-size: 24px;
-    font-weight: bold;
-    width: 358px;
-    height: 72px;
-  }
-  .sliderTopMainContainer .sliderTopContainer p {
-    font-size: 14px;
-    height: 63px;
-    max-width: 358px;
-  }
-  main .embla {
-    max-width: 376px;
-    margin: 0 auto;
-  }
-  .sliderTopMainContainer {
-    width: 358px;
-  }
-  .sliderMainContaienr .Slidercard {
-    width: 178px;
-    height: 201px;
-  }
-  main .sliderMainContaienr {
-    gap: 40px;
-    margin-top: 100px;
-  }
-  .sliderMainContaienr .Slidercard .photoContainer {
-    width: 138px;
-    height: 140px;
-  }
-  .photoContainer img {
-    width: 138px;
-    height: 140px;
-  }
-  .sliderMainContaienr .Slidercard .photoContainer .imgFog {
-    width: 138px;
-    height: 140px;
-  }
-  .sliderMainContaienr .Slidercard .action {
-    width: 138px;
-    height: 21px;
-  }
-  .sliderMainContaienr .Slidercard .action p {
-    font-size: 14px;
-  }
-  .sliderArrowContainer.sliderArrowContainerMedaiQuere {
-    display: flex;
-  }
-  .sliderArrowContainer {
-    display: none;
-  }
-  header {
-    max-width: 390px;
-    height: 102px;
-    padding: 46px 16px;
-  }
-  header .headerUl {
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    border-radius: 0px;
-  }
-  header .headerIcons {
-    display: none;
-  }
-  header .menuIcon {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .navMenu {
-    position: fixed;
-    left: -100%;
-    top: 0;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    padding: 96px 56px 72px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: left 0.4s;
-  }
-  .showMenu .navItem {
-    visibility: visible;
-    transform: translateX(0);
-  }
-  .navItem {
-    transform: translateX(-150px);
-    visibility: hidden;
-    transition: transform 0.4s ease-out, visibility 0.4s;
-  }
-  .navItem:nth-child(1) {
-    transition-delay: 0.1s;
-  }
-  .navItem:nth-child(2) {
-    transition-delay: 0.2s;
-  }
-  .navItem:nth-child(3) {
-    transition-delay: 0.3s;
-  }
-  .navItem:nth-child(4) {
-    transition-delay: 0.4s;
-  }
-  .navItem:nth-child(5) {
-    transition-delay: 0.5s;
-  }
-
-  .navMenu ul {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .navClose {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-  }
-
-  .showMenu {
-    left: 0;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .navToggle,
-  .navClose {
-    display: none;
-  }
-}
-
-@media (max-width: 1025px) {
-  header {
-    max-width: 360px;
-    height: auto;
-    padding: 16px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .headerUl {
-    display: none;
-  }
-
-  .menuIcon {
-    display: block;
-  }
-
-  .headerIcons {
-    display: none;
-  }
-
-  .navMenu ul {
-    width: 360px;
-    position: fixed;
-
-    top: 185px;
-    height: 870px;
-
-    display: flex;
-    flex-direction: column;
-
-    transition: left 0.4s;
-
-    flex-direction: column;
-    color: var(--headerLetters);
-  }
-  .showMenu {
-    max-width: 100%;
-  }
-}
-@media (max-width: 1025px) {
-  .heroContainer {
-    width: 360px;
-    background: url(../../pages/img/png/SubContainerMobile.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0 auto;
-    max-height: 639px;
-  }
-  .heroContainer h2 {
-    font-size: 28px;
-  }
-  .heroContainer p {
-    font-size: 13px;
-    height: 63px;
-  }
-  .heroContainer .playIconbg {
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
-  }
-  .watchBtn {
-    padding: 14px 34px;
-    width: 209px;
-    height: 52px;
-    justify-content: space-between;
-  }
-  .watchBtn p {
-    height: 21px;
-  }
-
-  .responsiveText {
-    visibility: hidden;
-    position: relative;
-  }
-
-  .responsiveText::after {
-    content: "StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.";
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .playIconContainer {
-    margin: 48px auto;
-  }
-  .gridContainer {
-    margin-top: 51px;
-  }
-  .gridContainer .gridTitle {
-    height: 112px;
-  }
-  .gridContainer .gridTitle h2 {
-    font-size: 20px;
-    max-width: 340px;
-  }
-  .gridContainer .gridTitle p {
-    visibility: hidden;
-    position: relative;
-    font-size: 14px;
-  }
-  .gridContainer .gridTitle p::after {
-    content: "With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere.";
-    position: absolute;
-    visibility: visible;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .cardgrids .card {
-    width: 361px;
-    height: 175px;
-  }
-  .cardgrids .card img {
-    width: 24px;
-    height: 24px;
-  }
-  .cardgrids .card .icon {
-    width: 44px;
-    height: 44px;
-  }
-  .card .imgTitle {
-    margin: 24px 24px 20px 24px;
-  }
-  .card .imgTitle h3 {
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .card p {
-    font-size: 14px;
-    font-weight: 400;
-    margin-left: 24px;
-    max-width: 313px;
-  }
-}
-@media (max-width: 1025px) {
-  main {
-    max-width: 360px;
-    margin: 0 auto;
-  }
-}
-/*  Frequently Asked Questions*/
 .FrequentlyAskedQuestions {
   width: 1280px;
   background-color: var(--websiteBackgroundColor);
@@ -768,7 +485,6 @@ main .embla {
   width: 620px;
   flex-direction: column;
 }
-/* End of Frequently Asked Questions */
 .chosePlan {
   display: flex;
   flex-direction: column;
@@ -915,7 +631,279 @@ main .embla {
   background-color: var(--colorButtonsActive);
   transition: 100ms;
 }
+/* mediaQueryPart */
+@media (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) {
+  .navToggle,
+  .navClose {
+    display: none;
+  }
+}
 @media (max-width: 1025px) {
+  .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 96px 56px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 0.4s;
+  }
+  .showMenu .navItem {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .navItem {
+    transform: translateX(-150px);
+    visibility: hidden;
+    transition: transform 0.4s ease-out, visibility 0.4s;
+  }
+  .navItem:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .navItem:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .navItem:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .navItem:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .navItem:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+
+  .navMenu ul {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .navClose {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .showMenu {
+    left: 0;
+  }
+  .heroContainer {
+    width: 360px;
+    background: url(../../pages/img/png/SubContainerMobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    max-height: 639px;
+  }
+  .heroContainer h2 {
+    font-size: 28px;
+  }
+  .heroContainer p {
+    font-size: 13px;
+    height: 63px;
+  }
+  .heroContainer .playIconbg {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  .watchBtn {
+    padding: 14px 34px;
+    width: 209px;
+    height: 52px;
+    justify-content: space-between;
+  }
+  .watchBtn p {
+    height: 21px;
+  }
+
+  .responsiveText {
+    visibility: hidden;
+    position: relative;
+  }
+  main {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .sliderTopMainContainer .sliderTopContainer {
+    max-width: 358px;
+    height: 143px;
+  }
+  .sliderTopMainContainer .sliderTopContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    width: 358px;
+    height: 72px;
+  }
+  .sliderTopMainContainer .sliderTopContainer p {
+    font-size: 14px;
+    height: 63px;
+    max-width: 358px;
+  }
+  main .embla {
+    max-width: 376px;
+    margin: 0 auto;
+  }
+  .sliderTopMainContainer {
+    width: 358px;
+  }
+  .sliderMainContaienr .Slidercard {
+    width: 178px;
+    height: 201px;
+  }
+  main .sliderMainContaienr {
+    gap: 40px;
+    margin-top: 100px;
+  }
+  .sliderMainContaienr .Slidercard .photoContainer {
+    width: 138px;
+    height: 140px;
+  }
+  .photoContainer img {
+    width: 138px;
+    height: 140px;
+  }
+  .sliderMainContaienr .Slidercard .photoContainer .imgFog {
+    width: 138px;
+    height: 140px;
+  }
+  .sliderMainContaienr .Slidercard .action {
+    width: 138px;
+    height: 21px;
+  }
+  .sliderMainContaienr .Slidercard .action p {
+    font-size: 14px;
+  }
+  .sliderArrowContainer.sliderArrowContainerMedaiQuere {
+    display: flex;
+  }
+  .sliderArrowContainer {
+    display: none;
+  }
+  header {
+    max-width: 390px;
+    height: 102px;
+    padding: 46px 16px;
+  }
+  header .headerUl {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-radius: 0px;
+  }
+  header .headerIcons {
+    display: none;
+  }
+  header .menuIcon {
+    display: block;
+  }
+  .responsiveText::after {
+    content: "StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.";
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .playIconContainer {
+    margin: 48px auto;
+  }
+  .gridContainer {
+    margin-top: 51px;
+  }
+  .gridContainer .gridTitle {
+    height: 112px;
+  }
+  .gridContainer .gridTitle h2 {
+    font-size: 20px;
+    max-width: 340px;
+  }
+  .gridContainer .gridTitle p {
+    visibility: hidden;
+    position: relative;
+    font-size: 14px;
+  }
+  .gridContainer .gridTitle p::after {
+    content: "With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere.";
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .cardgrids .card {
+    width: 361px;
+    height: 175px;
+  }
+  .cardgrids .card img {
+    width: 24px;
+    height: 24px;
+  }
+  .cardgrids .card .icon {
+    width: 44px;
+    height: 44px;
+  }
+  .card .imgTitle {
+    margin: 24px 24px 20px 24px;
+  }
+  .card .imgTitle h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .card p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 24px;
+    max-width: 313px;
+  }
+  header {
+    max-width: 360px;
+    height: auto;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerUl {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .headerIcons {
+    display: none;
+  }
+
+  .navMenu ul {
+    width: 360px;
+    position: fixed;
+
+    top: 185px;
+    height: 870px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: left 0.4s;
+
+    flex-direction: column;
+    color: var(--headerLetters);
+  }
+  .showMenu {
+    max-width: 100%;
+  }
   .chosePlan .chosePlanHeader {
     width: 358px;
     flex-direction: column;
