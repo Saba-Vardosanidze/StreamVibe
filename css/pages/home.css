@@ -641,8 +641,7 @@ main .embla {
 }
 /*  Frequently Asked Questions*/
 .FrequentlyAskedQuestions {
-  max-width: 1280px;
-  width: 100%;
+  width: 1280px;
   background-color: var(--websiteBackgroundColor);
   margin: 0 auto;
   display: flex;
@@ -689,7 +688,7 @@ main .embla {
   scale: 1.1;
   background-color: var(--colorWatchBtnHover);
 }
-◘ .FrequentlyBottomCont {
+.FrequentlyBottomCont {
   display: flex;
   width: 1280px;
 }
@@ -697,7 +696,7 @@ main .embla {
   width: 1280px;
   margin-top: 60px;
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 .FrequentlyLeftCont {
   width: 620px;
@@ -712,8 +711,9 @@ main .embla {
 }
 
 .questionSections {
-  max-width: 620px;
+  width: 620px;
   display: flex;
+  justify-content: center;
   max-height: 140px;
 }
 .numberContainer {
@@ -727,10 +727,8 @@ main .embla {
   margin-right: 16px;
   border-radius: 8px;
 }
-.questionCont {
-  width: 466px;
-}
 .askContainer {
+  width: 506px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -748,6 +746,7 @@ main .embla {
   display: none;
 }
 .line {
+  width: 620px;
   height: 1px;
   background: linear-gradient(
     90deg,
