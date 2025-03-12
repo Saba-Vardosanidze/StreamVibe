@@ -372,7 +372,6 @@ main .embla {
   justify-content: space-between;
 }
 .FrequentlyTopCont .titleContainer {
-  width: 1280;
   display: flex;
   flex-direction: column;
 }
@@ -406,8 +405,8 @@ main .embla {
   background-color: var(--colorWatchBtnHover);
 }
 .FrequentlyBottomCont {
-  display: flex;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
 }
 .askAndQuestionCont {
   width: 1280px;
@@ -1018,5 +1017,62 @@ main .embla {
   .usersOffersContainer .chooseButton button {
     width: 149px;
     height: 49px;
+  }
+
+  .FrequentlyAskedQuestions {
+    width: 358px;
+    margin-top: 80px;
+  }
+  .FrequentlyTopCont {
+    width: 358px;
+    height: 172px;
+    display: block;
+  }
+  .FrequentlyTopCont .titleContainer h3 {
+    font-size: 20px;
+  }
+  .FrequentlyTopCont .titleContainer p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .FrequentlyTopCont button {
+    margin-top: 20px;
+  }
+  .askAndQuestionCont {
+    display: block;
+    width: 358px;
+  }
+  .sectionHide {
+    display: none;
+  }
+  .FrequentlyLeftCont {
+    margin-bottom: 20px;
+  }
+  .questionSections {
+    width: 358px;
+  }
+  .questionSections .answer {
+    font-size: 14px;
+    font-weight: 400;
+    width: 338px;
+  }
+  .sectionsContainer {
+    width: 358px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .line {
+    width: 358px;
+  }
+  .askContainer {
+    width: 280px;
+  }
+  .questionCont .question {
+    width: 238px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .FrequentlyBottomCont {
+    width: 358px;
   }
 }
