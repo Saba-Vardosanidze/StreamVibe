@@ -3,8 +3,8 @@ body {
   background-color: var(--websiteBackgroundColor);
 }
 .mainContainer {
-  width: 1440px;
-
+  max-width: 1440px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   background-color: var(--websiteBackgroundColor);
@@ -494,6 +494,7 @@ main .embla {
 }
 .chosePlan .chosePlanHeader {
   max-width: 1280px;
+  width: 100%;
   display: flex;
   gap: 100px;
   align-items: end;
@@ -631,6 +632,58 @@ main .embla {
   background-color: var(--colorButtonsActive);
   transition: 100ms;
 }
+/* start Trial */
+.trailMainContainer {
+  max-width: 1280px;
+  width: 100%;
+  height: 237px;
+  background: linear-gradient(
+      90deg,
+      rgba(15, 15, 15, 1) 2%,
+      rgba(20, 15, 15, 0.97) 16%,
+      rgba(34, 14, 14, 0.91) 28%,
+      rgba(229, 0, 0, 0.3337710084033614) 100%
+    ),
+    url(../../pages/img/png/TrialBackgroundImages.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  margin: 135px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  border: 1px solid var(--cardBackgroundColor);
+}
+.trailMainContainer .trileOfferAds h2 {
+  color: var(--colorWhite);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.trailMainContainer .trileOfferAds p {
+  color: var(--colorPharagraf);
+  font-weight: 400;
+}
+.trailMainContainer button {
+  width: 149px;
+  height: 49px;
+  background-color: var(--colorButtons);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--colorWhite);
+  font-size: 14px;
+  transition: 500ms;
+}
+.trailMainContainer button:hover {
+  background-color: var(--colorWatchBtnHover);
+}
+.trailMainContainer button:active {
+  background-color: var(--colorButtonsActive);
+}
+/* end Trial */
 /* mediaQueryPart */
 @media screen and (min-width: 1025px) {
   .navToggle,
