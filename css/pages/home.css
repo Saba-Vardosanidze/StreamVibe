@@ -1019,4 +1019,30 @@ main .embla {
     width: 149px;
     height: 49px;
   }
+  .trailMainContainer {background:linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(20,15,15,1) 33%, rgba(34,14,14,0.91) 67%, rgba(229,0,0,0.3757878151260504) 100%)
+,    url(../../pages/img/png/TrialMobileVersionBackground.png); background-size: contain; width: 358px;
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px;
+  margin-top: 80px;
+
+}
+.trailMainContainer .trileOfferAds h2 {
+ text-align: center;
+ font-size: 24px;
+ font-weight: 700;
+ width: 210px;
+ margin: 0 auto;
+margin-bottom: 10px;
+
+}
+.trailMainContainer .trileOfferAds p {
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+
+
+
+}
 }
