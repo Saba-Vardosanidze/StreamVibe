@@ -640,7 +640,7 @@ main .embla {
   }
 }
 /*  Frequently Asked Questions*/
-.FrequentlyAskedQuestions {
+.frequentlyAskedQuestions {
   width: 1280px;
   background-color: var(--websiteBackgroundColor);
   margin: 0 auto;
@@ -648,27 +648,29 @@ main .embla {
   flex-direction: column;
   margin-top: 180px;
 }
-.FrequentlyTopCont {
-  width: 1280px;
+.frequentlyTopCont {
+  max-width: 1280px;
+  width: 100%;
   height: 76px;
   display: flex;
   justify-content: space-between;
+  align-items: end;
 }
-.FrequentlyTopCont .titleContainer {
+.frequentlyTopCont .titleContainer {
   width: 1280;
+  height: 76px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.FrequentlyTopCont .titleContainer h3 {
+.frequentlyTopCont .titleContainer h3 {
   font-size: 28px;
-  font-weight: 700;
   color: var(--colorWhite);
-  margin-bottom: 10px;
 }
-.FrequentlyTopCont .titleContainer p {
+.frequentlyTopCont .titleContainer p {
   color: var(--colorPharagraf);
 }
-.FrequentlyTopCont button {
+.frequentlyTopCont button {
   background-color: var(--colorButtons);
   border-radius: 6px;
   font-size: 14px;
@@ -680,43 +682,34 @@ main .embla {
   color: var(--colorWhite);
   border: none;
   cursor: pointer;
-  margin-top: 27px;
-  margin-left: 80;
   transition: all 0.5s ease;
 }
 .askQuestion:hover {
   scale: 1.1;
   background-color: var(--colorWatchBtnHover);
 }
-.FrequentlyBottomCont {
+.frequentlyAskedQuestions .frequentlyBottomCont {
   display: flex;
   width: 1280px;
-}
-.askAndQuestionCont {
-  width: 1280px;
-  margin-top: 60px;
-  display: flex;
   gap: 40px;
 }
-.FrequentlyLeftCont {
+
+.frequentlyBottomCont .frequentlyLeftCont {
   width: 620px;
   display: flex;
   flex-direction: column;
-}
-.sectionsContainer {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  gap: 16px;
+  margin-top: 60px;
+  gap: 36px;
 }
 
 .questionSections {
   width: 620px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   max-height: 140px;
 }
-.numberContainer {
+.showElements .numberContainer {
   background-color: var(--cardBackgroundColor);
   color: var(--colorWhite);
   display: flex;
@@ -727,23 +720,22 @@ main .embla {
   margin-right: 16px;
   border-radius: 8px;
 }
-.askContainer {
+.questionCont .askContainer {
   width: 506px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.showElements {
+  display: flex;
+}
+
 .questionCont .question {
   font-size: 20px;
   font-weight: 500;
   color: var(--colorWhite);
   margin-bottom: 14px;
   margin-top: 10px;
-}
-.questionCont .answer {
-  width: 466px;
-  color: var(--colorPharagraf);
-  display: none;
 }
 .line {
   width: 620px;
@@ -755,17 +747,27 @@ main .embla {
     rgba(229, 0, 0, 0) 100%
   );
 }
-.openClosebtnCont {
+.askContainer .openClosebtnCont {
   width: 24px;
   height: 24px;
 }
-.closeBtn {
+.openClosebtnCont .closeBtn {
   width: 24px;
   display: none;
 }
-.FrequentlyRightCont {
-  display: flex;
+.hideelements {
+  max-width: 466px;
+  width: 100%;
+  color: var(--colorPharagraf);
+  margin-left: 22px;
+  display: none;
+}
+
+.frequentlyBottomCont .frequentlyRightCont {
   width: 620px;
+  display: flex;
   flex-direction: column;
+  margin-top: 60px;
+  gap: 36px;
 }
 /* End of Frequently Asked Questions */

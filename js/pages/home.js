@@ -57,7 +57,7 @@ const mainContainer = document.querySelectorAll(".questionSections");
 mainContainer.forEach((singleCard) => {
   const openBtn = singleCard.querySelector(".openBtn");
   const closeBtn = singleCard.querySelector(".closeBtn");
-  const answer = singleCard.querySelector(".answer");
+  const answer = singleCard.querySelector(".hideelements");
 
   openBtn.addEventListener("click", () => {
     answer.style.display = "block";
