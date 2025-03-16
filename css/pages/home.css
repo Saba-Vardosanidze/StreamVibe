@@ -1091,12 +1091,14 @@ main .embla {
 
   .questionCont .question {
     margin-top: 0;
+    margin-bottom: 0;
   }
   .questionSections {
     width: 358px;
   }
   .showElements {
     width: 358px;
+    align-items: center;
   }
   .hideelements {
     width: 358px;
@@ -1111,7 +1113,16 @@ main .embla {
   .line {
     width: 358px;
   }
+  .frequentlyBottomCont .frequentlyLeftCont {
+    width: 358px;
+  }
+  .frequentlyAskedQuestions .frequentlyBottomCont {
+    width: 358px;
+  }
 
+  .frequentlyBottomCont .frequentlyRightCont {
+    width: 358px;
+  }
   .deleteContainer {
     display: none;
   }
