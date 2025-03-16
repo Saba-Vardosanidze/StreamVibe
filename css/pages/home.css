@@ -1053,4 +1053,66 @@ main .embla {
     font-size: 14px;
     font-weight: 400;
   }
+  .frequentlyAskedQuestions {
+    margin-top: 80px;
+  }
+  .frequentlyTopCont {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    height: 172px;
+    align-items: start;
+  }
+
+  .frequentlyTopCont .titleContainer h3 {
+    width: 358px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .frequentlyTopCont .titleContainer p {
+    width: 358px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0 20px 0;
+  }
+  .frequentlyBottomCont {
+    flex-direction: column;
+    width: 358px;
+  }
+  .frequentlyBottomCont .frequentlyRightCont {
+    margin-top: 0;
+  }
+  .askContainer .openClosebtnCont {
+    margin-left: 10px;
+  }
+  .questionCont .askContainer {
+    width: 290px;
+  }
+
+  .questionCont .question {
+    margin-top: 0;
+  }
+  .questionSections {
+    width: 358px;
+  }
+  .showElements {
+    width: 358px;
+  }
+  .hideelements {
+    width: 358px;
+    margin-left: 0px;
+  }
+  .hideelements .answer {
+    font-size: 14px;
+    font-weight: 400;
+    width: 338px;
+    margin-top: 12px;
+  }
+  .line {
+    width: 358px;
+  }
+
+  .deleteContainer {
+    display: none;
+  }
 }
