@@ -695,9 +695,22 @@ main .embla {
   background-color: var(--colorBlack);
   padding-top: 80px;
 }
+.footerMainContainer section a:hover {
+  color: var(--textColor);
+  transition: color 0.5s ease;
+}
+.sectionOne {
+  display: flex;
+}
+.sectionTwo {
+  display: flex;
+}
+.sectionThree {
+  display: flex;
+}
 .footerMainContainer .footerTopContainer {
   max-width: 1220px;
-  height: 173px;
+
   display: flex;
   gap: 20px;
   margin: 0 auto;
@@ -1188,5 +1201,25 @@ main .embla {
   }
   .deleteContainer {
     display: none;
+  }
+  .footerMainContainer .footerTopContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerMainContainer .socmediaLinks {
+    display: flex;
+  }
+
+  .footerBottomContainer {
+    width: 390px;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 82px;
+  }
+  .footerBottomContainer .footerUsefullLinks {
+    margin-top: 0px;
+  }
+  .footerBottomContainer .footerCopyRight {
+    margin-bottom: 0;
   }
 }
