@@ -3,7 +3,6 @@ body {
   background-color: var(--websiteBackgroundColor);
 }
 .mainContainer {
-  max-width: 1440px;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -233,6 +232,7 @@ main .embla {
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 150px;
+  margin: 0 auto;
 }
 .playIconContainer {
   width: 300px;
@@ -688,6 +688,69 @@ main .embla {
   background-color: var(--colorButtonsActive);
 }
 /* end Trial */
+
+/* start footer */
+.footerMainContainer {
+  width: 100%;
+  background-color: var(--colorBlack);
+  padding-top: 80px;
+}
+.footerMainContainer .footerTopContainer {
+  max-width: 1220px;
+  height: 173px;
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+}
+.footerTopContainer section {
+  width: 196px;
+  display: flex;
+  flex-direction: column;
+}
+.footerTopContainer section h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--colorWhite);
+  margin-bottom: 20px;
+}
+.footerTopContainer section a {
+  font-size: 16px;
+  color: var(--colorPharagraf);
+  margin-top: 10px;
+}
+.footerTopContainer .socialWebs {
+  display: flex;
+  gap: 10px;
+}
+.bottomLine {
+  max-width: 1220px;
+  border-top: 1px solid var(--cardBackgroundColor);
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.footerBottomContainer {
+  max-width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.footerBottomContainer .footerCopyRight {
+  margin-top: 20px;
+  color: var(--colorPharagraf);
+  margin-bottom: 40px;
+}
+.footerBottomContainer .footerUsefullLinks {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+.footerBottomContainer .linkBorders {
+  height: 21px;
+  border-left: 1px solid var(--colorPharagraf);
+}
+.footerBottomContainer .footerUsefullLinks a {
+  color: var(--colorPharagraf);
+}
 /* mediaQueryPart */
 @media screen and (min-width: 1025px) {
   .navToggle,

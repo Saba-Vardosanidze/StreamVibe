@@ -13,6 +13,7 @@
   --colorWatchBtnHover: #a81616;
   --cardBackgroundColor: #262626;
   --colorButtonsActive: #f32d2d;
+  --colorBlack: #0f0f0f;
 }
 @font-face {
   font-family: "Manrope";
@@ -109,4 +110,7 @@ select {
   /* background-color: rgb(var(--color-white)); */
   outline: none;
   border: none;
+}
+a {
+  text-decoration: none;
 }
