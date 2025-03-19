@@ -3,13 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Square Up Digital Agency</title>
-    <link rel="stylesheet" href="css/global/reset.css" />
-    <link rel="stylesheet" href="css/global/common.css" />
-    <link rel="stylesheet" href="css/pages/services.css" />
+    <title>StreamVibe</title>
+    <link rel="stylesheet" href="../css/global/reset.css" />
+    <link rel="stylesheet" href="../css/global/common.css" />
+    <link rel="stylesheet" href="../css/pages/services.css" />
+    <link rel="icon" type="image/png" href="/pages/img/png/LogoFavicon.png" />
   </head>
   <body>
-    <script src="js/global/common.js"></script>
-    <script src="js/pages/service.js"></script>
+    <div class="mainContainer">
+      <div class="heroContainer">
+        <header>
+          <div class="logo">
+            <a href="/index.html"
+              ><img
+                src="/pages/img/svg/header/logoStreamVibe.svg"
+                alt="StreamVibe"
+            /></a>
+          </div>
+          <nav class="headerUl navMenu" id="nav-menu">
+            <ul>
+              <li class="navItem">
+                <a href="/index.html" class="navLink">Home</a>
+              </li>
+              <li class="navItem">
+                <a href="service.html" class="service.html">Movies & Shows</a>
+              </li>
+              <li class="navItem"><a href="#" class="navLink">Support</a></li>
+              <li class="navItem">
+                <a href="#" class="navLink" s>Subscriptions</a>
+              </li>
+            </ul>
+            <div class="navClose" id="nav-close">
+              <i style="color: white" class="ri-close-large-line"></i>
+            </div>
+          </nav>
+          <div class="headerIcons">
+            <button>
+              <img src="/pages/img/svg/header/lupaa.svg" alt="lupa" />
+            </button>
+            <button>
+              <img src="/pages/img/svg/header/bell.svg" alt="bell" />
+            </button>
+          </div>
+          <div class="menuIcon" id="nav-toggle">
+            <img src="/pages/img/svg/burgermenu.svg" alt="burgerMenu" />
+          </div>
+        </header>
+        <div class="embla">
+          <div class="embla__container">
+            <div class="embla__slide movieA">
+              <div class="movieTitleDescription">
+                <h3>Avengers : Endgame</h3>
+                <p>
+                  With the help of remaining allies, the Avengers must assemble
+                  once more in order to undo Thanos's actions and undo the chaos
+                  to the universe, no matter what consequences may be in store,
+                  and no matter who they face... Avenge the fallen.
+                </p>
+              </div>
+              <div class="movieButtonContainer">
+                <butto class="playButton">
+                  <img src="./img/svg/watchingBtnIcon.svg" alt="" />Play
+                  Now</butto
+                >
+                <div class="pluseButton">
+                  <button class="arrowButoon">
+                    <img src="./img/svg/pluse.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/like.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/volue.svg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="embla__slide movieB">
+              <div class="movieTitleDescription">
+                <h3>Prisoners</h3>
+                <p>
+                  When Keller Dover's daughter and her friend go missing, he
+                  takes matters into his own hands as the police pursue multiple
+                  leads. With time running out, he faces impossible choices in
+                  his desperate search for the truth. How far would you go to
+                  protect your family?
+                </p>
+              </div>
+              <div class="movieButtonContainer">
+                <butto class="playButton">
+                  <img src="./img/svg/watchingBtnIcon.svg" alt="" />Play
+                  Now</butto
+                >
+                <div class="pluseButton">
+                  <button class="arrowButoon">
+                    <img src="./img/svg/pluse.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/like.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/volue.svg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="embla__slide movieC">
+              <div class="movieTitleDescription">
+                <h3>Spider-Man</h3>
+                <p>
+                  After being bitten by a genetically modified spider, Peter
+                  Parker gains incredible powers and learns that with great
+                  power comes great responsibility. As he faces dangerous foes
+                  and personal struggles, he must embrace his destiny as
+                  Spider-Man to protect those he loves.
+                </p>
+              </div>
+              <div class="movieButtonContainer">
+                <butto class="playButton">
+                  <img src="./img/svg/watchingBtnIcon.svg" alt="" />Play
+                  Now</butto
+                >
+                <div class="pluseButton">
+                  <button class="arrowButoon">
+                    <img src="./img/svg/pluse.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/like.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/volue.svg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="arrowButoon" id="prev">
+            <img src="img/svg/arrow.svg" />
+          </button>
+          <button class="arrowButoon" id="next">
+            <img class="rightScrolArrow" src="img/svg/arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+    <script src="/js/global/common.js"></script>
+    <script src="/js/pages/service.js"></script>
   </body>
 </html>
