@@ -208,6 +208,133 @@ header .menuIcon {
   width: 960px;
   margin: 0 auto;
 }
+.trailMainContainer {
+  max-width: 1280px;
+  width: 100%;
+  height: 237px;
+  background: linear-gradient(
+      90deg,
+      rgba(15, 15, 15, 1) 2%,
+      rgba(20, 15, 15, 0.97) 16%,
+      rgba(34, 14, 14, 0.91) 28%,
+      rgba(229, 0, 0, 0.3337710084033614) 100%
+    ),
+    url(../../pages/img/png/TrialBackgroundImages.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  margin: 135px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  border: 1px solid var(--cardBackgroundColor);
+}
+.trailMainContainer .trileOfferAds h2 {
+  color: var(--colorWhite);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.trailMainContainer .trileOfferAds p {
+  color: var(--colorPharagraf);
+  font-weight: 400;
+}
+.trailMainContainer button {
+  width: 149px;
+  height: 49px;
+  background-color: var(--colorButtons);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--colorWhite);
+  font-size: 14px;
+  transition: 500ms;
+}
+.trailMainContainer button:hover {
+  background-color: var(--colorWatchBtnHover);
+}
+.trailMainContainer button:active {
+  background-color: var(--colorButtonsActive);
+}
+/* end Trial */
+
+/* start footer */
+.footerMainContainer {
+  width: 100%;
+  background-color: var(--colorBlack);
+  padding-top: 80px;
+}
+.footerMainContainer section a:hover {
+  color: var(--textColor);
+  transition: color 0.5s ease;
+}
+.sectionOne {
+  display: flex;
+}
+.sectionTwo {
+  display: flex;
+}
+.sectionThree {
+  display: flex;
+}
+.footerMainContainer .footerTopContainer {
+  max-width: 1220px;
+
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+}
+.footerTopContainer section {
+  width: 196px;
+  display: flex;
+  flex-direction: column;
+}
+.footerTopContainer section h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--colorWhite);
+  margin-bottom: 20px;
+}
+.footerTopContainer section a {
+  font-size: 16px;
+  color: var(--colorPharagraf);
+  margin-top: 10px;
+}
+.footerTopContainer .socialWebs {
+  display: flex;
+  gap: 10px;
+}
+.bottomLine {
+  max-width: 1220px;
+  border-top: 1px solid var(--cardBackgroundColor);
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.footerBottomContainer {
+  max-width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.footerBottomContainer .footerCopyRight {
+  margin-top: 20px;
+  color: var(--colorPharagraf);
+  margin-bottom: 40px;
+}
+.footerBottomContainer .footerUsefullLinks {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+.footerBottomContainer .linkBorders {
+  height: 21px;
+  border-left: 1px solid var(--colorPharagraf);
+}
+.footerBottomContainer .footerUsefullLinks a {
+  color: var(--colorPharagraf);
+}
 @media screen and (min-width: 1025px) {
   .navToggle,
   .navClose {
@@ -338,5 +465,129 @@ header .menuIcon {
         rgba(20, 20, 20, 0) 100%
       ),
       url(/pages/img/png/movieCMobileVersiont.jpg);
+  }
+  /* footer */
+  .trailMainContainer {
+    background: linear-gradient(
+        180deg,
+        rgba(15, 15, 15, 0.98) 0%,
+        rgba(20, 15, 15, 0.96) 22%,
+        rgba(34, 14, 14, 0.91) 67%,
+        rgba(229, 0, 0, 0.2497373949579832) 100%
+      ),
+      url(../../pages/img/png/TrialMobileVersionBackground.png);
+    background-size: contain;
+    width: 358px;
+    height: 344px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    margin-top: 80px;
+  }
+  .trailMainContainer .trileOfferAds h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    width: 210px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .trailMainContainer .trileOfferAds p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .frequentlyAskedQuestions {
+    margin-top: 80px;
+  }
+  .frequentlyTopCont {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    height: 172px;
+    align-items: start;
+  }
+
+  .frequentlyTopCont .titleContainer h3 {
+    width: 358px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .frequentlyTopCont .titleContainer p {
+    width: 358px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0 20px 0;
+  }
+  .frequentlyBottomCont {
+    flex-direction: column;
+    width: 358px;
+  }
+  .frequentlyBottomCont .frequentlyRightCont {
+    margin-top: 0;
+  }
+  .askContainer .openClosebtnCont {
+    margin-left: 10px;
+  }
+  .questionCont .askContainer {
+    width: 290px;
+  }
+
+  .questionCont .question {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .questionSections {
+    width: 358px;
+  }
+  .showElements {
+    width: 358px;
+    align-items: center;
+  }
+  .hideelements {
+    width: 358px;
+    margin-left: 0px;
+  }
+  .hideelements .answer {
+    font-size: 14px;
+    font-weight: 400;
+    width: 338px;
+    margin-top: 12px;
+  }
+  .line {
+    width: 358px;
+  }
+  .frequentlyBottomCont .frequentlyLeftCont {
+    width: 358px;
+  }
+  .frequentlyAskedQuestions .frequentlyBottomCont {
+    width: 358px;
+  }
+
+  .frequentlyBottomCont .frequentlyRightCont {
+    width: 358px;
+  }
+  .deleteContainer {
+    display: none;
+  }
+  .footerMainContainer .footerTopContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerMainContainer .socmediaLinks {
+    display: flex;
+  }
+
+  .footerBottomContainer {
+    width: 390px;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 82px;
+  }
+  .footerBottomContainer .footerUsefullLinks {
+    margin-top: 0px;
+  }
+  .footerBottomContainer .footerCopyRight {
+    margin-bottom: 0;
   }
 }
