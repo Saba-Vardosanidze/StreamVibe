@@ -1,3 +1,29 @@
+// const navMenu = document.getElementById("nav-menu");
+// const navToggle = document.getElementById("nav-toggle");
+// const navClose = document.getElementById("nav-close");
+
+// if (navToggle) {
+//   navToggle.addEventListener("click", () => {
+//     navMenu.classList.add("showMenu");
+//   });
+// }
+
+// if (navClose) {
+//   navClose.addEventListener("click", () => {
+//     navMenu.classList.remove("showMenu");
+//   });
+// }
+// const emblaNode = document.querySelector(".embla");
+// const embla = EmblaCarousel(emblaNode, {
+//   loop: true,
+//   align: "start",
+//   slidesToScroll: 1,
+// });
+
+// setInterval(() => {
+//   embla.scrollNext();
+// }, 5000);
+
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
@@ -13,45 +39,48 @@ if (navClose) {
     navMenu.classList.remove("showMenu");
   });
 }
-const emblaNode = document.querySelector(".embla");
-const embla = EmblaCarousel(emblaNode, {
-  loop: true,
-  align: "start",
-  slidesToScroll: 1,
-});
 
-setInterval(() => {
-  embla.scrollNext();
-}, 5000);
-
-const prevButton = document.getElementById("prev");
-const nextButton = document.getElementById("next");
-
-prevButton.addEventListener("click", () => {
-  embla.scrollPrev();
-});
-
-nextButton.addEventListener("click", () => {
-  embla.scrollNext();
-});
 document.addEventListener("DOMContentLoaded", () => {
-  const emblaNode = document.getElementById("embla2");
+  const emblaNode1 = document.querySelector(".embla");
+  if (emblaNode1) {
+    const embla1 = EmblaCarousel(emblaNode1, {
+      loop: true,
+      align: "start",
+      slidesToScroll: 1,
+    });
 
-  const options = {
-    loop: false,
-    align: "start",
-    slidesToScroll: 1,
-  };
+    setInterval(() => {
+      embla1.scrollNext();
+    }, 5000);
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
 
-  const embla = EmblaCarousel(emblaNode, options);
+    prevButton.addEventListener("click", () => {
+      embla1.scrollPrev();
+    });
 
-  const prev = document.getElementById("prev");
-  const next = document.getElementById("next");
+    nextButton.addEventListener("click", () => {
+      embla1.scrollNext();
+    });
+  }
 
-  if (prev) prev.addEventListener("click", () => embla.scrollPrev());
-  if (next) next.addEventListener("click", () => embla.scrollNext());
+  const emblaNode2 = document.getElementById("embla2");
+  if (emblaNode2) {
+    const embla2 = EmblaCarousel(emblaNode2, {
+      loop: false,
+      align: "start",
+      slidesToScroll: 1,
+    });
 
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowRight") embla.scrollNext();
-    if (event.key === "ArrowLeft") embla.scrollPrev();
-  });
+    const prev = document.getElementById("prevTwo");
+    const next = document.getElementById("nextTwo");
+
+    if (prev) prev.addEventListener("click", () => embla2.scrollPrev());
+    if (next) next.addEventListener("click", () => embla2.scrollNext());
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") embla2.scrollNext();
+      if (event.key === "ArrowLeft") embla2.scrollPrev();
+    });
+  }
+});
