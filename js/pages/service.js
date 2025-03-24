@@ -117,3 +117,22 @@ dialog.addEventListener("click", (event) => {
     dialog.close();
   }
 });
+const trending = document.querySelector(".trendingNow");
+if (trending) {
+  const embla3 = EmblaCarousel(trending, {
+    loop: false,
+    align: "start",
+    slidesToScroll: 1,
+  });
+
+  const prev = document.getElementById("prevFour");
+  const next = document.getElementById("nextFour");
+
+  if (prev) prev.addEventListener("click", () => embla3.scrollPrev());
+  if (next) next.addEventListener("click", () => embla3.scrollNext());
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowRight") embla3.scrollNext();
+    if (event.key === "ArrowLeft") embla3.scrollPrev();
+  });
+}
