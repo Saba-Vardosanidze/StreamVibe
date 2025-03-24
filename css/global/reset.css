@@ -10,14 +10,11 @@
   --textColor: #e4e4e7;
   --websiteBackgroundColor: #141414;
   --buttonHover: #e50000;
-  --colorWatchBtnHover: #a81616;
   --cardBackgroundColor: #262626;
-  --colorButtonsActive: #f32d2d;
-  --colorBlack: #0f0f0f;
 }
 @font-face {
   font-family: "Manrope";
-  src: url("../../assets/fonts/Manrope-Regular.ttf");
+  src: url(../../assets/fonts/Manrope-Regular.ttf);
 }
 /* CSS reset: https://www.joshwcomeau.com/css/custom-css-reset/ */
 
@@ -86,6 +83,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: rgb(var(--color-white));
   /* font-family: ; */
 }
 
@@ -110,7 +108,4 @@ select {
   /* background-color: rgb(var(--color-white)); */
   outline: none;
   border: none;
-}
-a {
-  text-decoration: none;
 }
