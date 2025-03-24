@@ -793,6 +793,7 @@ dialog input {
 .footerBottomContainer .footerUsefullLinks a {
   color: var(--colorPharagraf);
 }
+
 /* mediaQueryPart */
 @media screen and (min-width: 1025px) {
   .navToggle,
