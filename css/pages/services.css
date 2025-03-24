@@ -614,7 +614,7 @@ main .embla#embla2 {
 }
 
 /* OUR GENRES start */
-.sliderMainContaienr .newReleases {
+#newReleases {
   margin-top: 80px;
 }
 .SlidercardRelease {
@@ -628,7 +628,7 @@ main .embla#embla2 {
   align-items: center;
 }
 #photoContainer {
-  margin: 16px 0;
+  margin: 16px;
   height: 230px;
   width: 192px;
   display: flex;
@@ -658,5 +658,4 @@ main .embla#embla2 {
 .april14 {
   color: var(--colorPharagraf);
 }
-
 /* OUR GENRES END */
