@@ -192,3 +192,80 @@ dialog input {
   width: 24px;
   height: 24px;
 }
+/* Start footer */
+
+.footerMainContainer {
+  width: 100%;
+  background-color: var(--colorBlack);
+  padding-top: 80px;
+}
+.footerMainContainer section a:hover {
+  color: var(--textColor);
+  transition: color 0.5s ease;
+}
+.sectionOne {
+  display: flex;
+}
+.sectionTwo {
+  display: flex;
+}
+.sectionThree {
+  display: flex;
+}
+.footerMainContainer .footerTopContainer {
+  max-width: 1220px;
+
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+}
+.footerTopContainer section {
+  width: 196px;
+  display: flex;
+  flex-direction: column;
+}
+.footerTopContainer section h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--colorWhite);
+  margin-bottom: 20px;
+}
+.footerTopContainer section a {
+  font-size: 16px;
+  color: var(--colorPharagraf);
+  margin-top: 10px;
+}
+.footerTopContainer .socialWebs {
+  display: flex;
+  gap: 10px;
+}
+.bottomLine {
+  max-width: 1220px;
+  border-top: 1px solid var(--cardBackgroundColor);
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.footerBottomContainer {
+  max-width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.footerBottomContainer .footerCopyRight {
+  margin-top: 20px;
+  color: var(--colorPharagraf);
+  margin-bottom: 40px;
+}
+.footerBottomContainer .footerUsefullLinks {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+.footerBottomContainer .linkBorders {
+  height: 21px;
+  border-left: 1px solid var(--colorPharagraf);
+}
+.footerBottomContainer .footerUsefullLinks a {
+  color: var(--colorPharagraf);
+}
+/* End footer */
