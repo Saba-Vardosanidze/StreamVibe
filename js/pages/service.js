@@ -1,29 +1,3 @@
-// const navMenu = document.getElementById("nav-menu");
-// const navToggle = document.getElementById("nav-toggle");
-// const navClose = document.getElementById("nav-close");
-
-// if (navToggle) {
-//   navToggle.addEventListener("click", () => {
-//     navMenu.classList.add("showMenu");
-//   });
-// }
-
-// if (navClose) {
-//   navClose.addEventListener("click", () => {
-//     navMenu.classList.remove("showMenu");
-//   });
-// }
-// const emblaNode = document.querySelector(".embla");
-// const embla = EmblaCarousel(emblaNode, {
-//   loop: true,
-//   align: "start",
-//   slidesToScroll: 1,
-// });
-
-// setInterval(() => {
-//   embla.scrollNext();
-// }, 5000);
-
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
@@ -83,7 +57,28 @@ document.addEventListener("DOMContentLoaded", () => {
       if (event.key === "ArrowLeft") embla2.scrollPrev();
     });
   }
+  //our Ganres
+  const emblaOurGanre = document.getElementById("emblaOurGanre");
+  if (emblaOurGanre) {
+    const embla3 = EmblaCarousel(emblaOurGanre, {
+      loop: false,
+      align: "start",
+      slidesToScroll: 1,
+    });
+
+    const prev = document.getElementById("prevOne");
+    const next = document.getElementById("nextOne");
+
+    if (prev) prev.addEventListener("click", () => embla3.scrollPrev());
+    if (next) next.addEventListener("click", () => embla3.scrollNext());
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") embla3.scrollNext();
+      if (event.key === "ArrowLeft") embla3.scrollPrev();
+    });
+  }
 });
+
 const openBtn = document.getElementById("open-modal");
 const dialog = document.getElementById("dialog");
 
