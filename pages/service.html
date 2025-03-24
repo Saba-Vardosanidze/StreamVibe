@@ -3,13 +3,672 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Square Up Digital Agency</title>
-    <link rel="stylesheet" href="css/global/reset.css" />
-    <link rel="stylesheet" href="css/global/common.css" />
-    <link rel="stylesheet" href="css/pages/services.css" />
+    <title>StreamVibe</title>
+    <link rel="stylesheet" href="../css/global/reset.css" />
+    <link rel="stylesheet" href="../css/global/common.css" />
+    <link rel="stylesheet" href="../css/pages/services.css" />
+    <link rel="icon" type="image/png" href="/pages/img/png/LogoFavicon.png" />
   </head>
   <body>
-    <script src="js/global/common.js"></script>
-    <script src="js/pages/service.js"></script>
+    <div class="mainContainer">
+      <div class="heroContainer">
+        <dialog id="dialog">
+          <input type="search" placeholder="Search..." />
+        </dialog>
+        <header>
+          <div class="logo">
+            <a href="/index.html"
+              ><img
+                src="/pages/img/svg/header/logoStreamVibe.svg"
+                alt="StreamVibe"
+            /></a>
+          </div>
+          <nav class="headerUl navMenu" id="nav-menu">
+            <ul>
+              <li class="navItem">
+                <a href="/index.html" class="navLink">Home</a>
+              </li>
+              <li class="navItem">
+                <a href="service.html" class="service.html">Movies & Shows</a>
+              </li>
+              <li class="navItem"><a href="#" class="navLink">Support</a></li>
+              <li class="navItem">
+                <a href="#" class="navLink" s>Subscriptions</a>
+              </li>
+            </ul>
+            <div class="navClose" id="nav-close">
+              <i style="color: white" class="ri-close-large-line"></i>
+            </div>
+          </nav>
+          <div class="headerIcons">
+            <button id="open-modal">
+              <img src="/pages/img/svg/header/lupaa.svg" alt="lupa" />
+            </button>
+            <button>
+              <img src="/pages/img/svg/header/bell.svg" alt="bell" />
+            </button>
+          </div>
+          <div class="menuIcon" id="nav-toggle">
+            <img src="/pages/img/svg/burgermenu.svg" alt="burgerMenu" />
+          </div>
+        </header>
+        <div class="embla" id="embla1">
+          <div class="embla__container">
+            <div class="embla__slide movieA">
+              <div class="movieTitleDescription">
+                <h3>Avengers : Endgame</h3>
+                <p>
+                  With the help of remaining allies, the Avengers must assemble
+                  once more in order to undo Thanos's actions and undo the chaos
+                  to the universe, no matter what consequences may be in store,
+                  and no matter who they face... Avenge the fallen.
+                </p>
+              </div>
+              <div class="movieButtonContainer">
+                <butto class="playButton">
+                  <img src="./img/svg/watchingBtnIcon.svg" alt="" />Play
+                  Now</butto
+                >
+                <div class="pluseButton">
+                  <button class="arrowButoon">
+                    <img src="./img/svg/pluse.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/like.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/volue.svg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="embla__slide movieB">
+              <div class="movieTitleDescription">
+                <h3>Prisoners</h3>
+                <p>
+                  When Keller Dover's daughter and her friend go missing, he
+                  takes matters into his own hands as the police pursue multiple
+                  leads. With time running out, he faces impossible choices in
+                  his desperate search for the truth. How far would you go to
+                  protect your family?
+                </p>
+              </div>
+              <div class="movieButtonContainer">
+                <butto class="playButton">
+                  <img src="./img/svg/watchingBtnIcon.svg" alt="" />Play
+                  Now</butto
+                >
+                <div class="pluseButton">
+                  <button class="arrowButoon">
+                    <img src="./img/svg/pluse.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/like.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/volue.svg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="embla__slide movieC">
+              <div class="movieTitleDescription">
+                <h3>Spider-Man</h3>
+                <p>
+                  After being bitten by a genetically modified spider, Peter
+                  Parker gains incredible powers and learns that with great
+                  power comes great responsibility. As he faces dangerous foes
+                  and personal struggles, he must embrace his destiny as
+                  Spider-Man to protect those he loves.
+                </p>
+              </div>
+              <div class="movieButtonContainer">
+                <butto class="playButton">
+                  <img src="./img/svg/watchingBtnIcon.svg" alt="" />Play
+                  Now</butto
+                >
+                <div class="pluseButton">
+                  <button class="arrowButoon">
+                    <img src="./img/svg/pluse.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/like.svg" />
+                  </button>
+                  <button class="arrowButoon">
+                    <img src="./img/svg/volue.svg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="arrowButoon" id="prev">
+            <img src="img/svg/arrow.svg" />
+          </button>
+          <button class="arrowButoon" id="next">
+            <img class="rightScrolArrow" src="img/svg/arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <main>
+        <!-- start OurGanre -->
+        <div class="sliderMainContaienr">
+          <div class="OurGanreSliderTopContainer">
+            <div class="sliderTopContainerCont">
+              <h2>Our Genres</h2>
+            </div>
+            <div class="sliderArrowContainer">
+              <button id="prevOne">
+                <img src="img/svg/lefttArrow.svg" alt="prev" />
+              </button>
+              <div class="embla__dots">
+                <div class="embla__dot"></div>
+                <div class="embla__dot"></div>
+              </div>
+              <button id="nextOne">
+                <img
+                  class="nextButton"
+                  src="img/svg/lefttArrow.svg"
+                  alt="next"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="embla" id="emblaOurGanre">
+            <div class="embla__container">
+              <div class="embla__slide ourGanreSlider">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img
+                      class="movieListImg"
+                      src="img/png/MoviesForFirstCard.png"
+                      alt="Movies"
+                    />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <p>Action</p>
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img
+                      class="movieListImg"
+                      src="img/png/MoviesFor2Card.png"
+                      alt="Movies"
+                    />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <p>Adventure</p>
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img
+                      class="movieListImg"
+                      src="img/png/MoviesFor3Card.png"
+                      alt="Movies"
+                    />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <p>Comedy</p>
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img
+                      class="movieListImg"
+                      src="img/png/MoviesFor4Card.png"
+                      alt="Movies"
+                    />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <p>Drama</p>
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img
+                      class="movieListImg"
+                      src="img/png/MoviesFor5Card.png"
+                      alt="Movies"
+                    />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <p>Horror</p>
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="Slidercard">
+                  <div class="photoContainer photoContainerSecondEmbla">
+                    <img
+                      class="FantasticAndSerialGanre movieListImg"
+                      src="img/png/MoviesFor6Card.png"
+                      alt="Movies"
+                    />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <p>fantasy</p>
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End OurGanre -->
+        <!-- start top 10 gernes -->
+        <div class="sliderMainContaienr">
+          <div class="sliderTopMainContainer">
+            <div class="sliderTopContainer">
+              <div class="titleArrowContainer">
+                <h3>Popular Top 10 In Genres</h3>
+                <div class="sliderArrowContainer">
+                  <button id="prevTwo">
+                    <img src="img/svg/lefttArrow.svg" alt="prev" />
+                  </button>
+                  <div class="embla__dots">
+                    <div class="embla__dot"></div>
+                    <div class="embla__dot"></div>
+                  </div>
+                  <button id="nextTwo">
+                    <img
+                      class="nextButton"
+                      src="img/svg/lefttArrow.svg"
+                      alt="next"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="embla" id="embla2">
+            <div class="embla__container">
+              <div class="embla__slide">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img
+                      class="slideCardPhoto"
+                      src="img/png/emblaCard1.png"
+                      alt="Movies"
+                    />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <div class="gernes">
+                      <div class="topTenIn">Top 10 In</div>
+                      <p>Action</p>
+                    </div>
+
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img src="img/png/emlaCard2.png" alt="Movies" />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <div class="gernes">
+                      <div class="topTenIn">Top 10 In</div>
+                      <p>Adventure</p>
+                    </div>
+
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img src="img/png/emblaCard3.png" alt="Movies" />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <div class="gernes">
+                      <div class="topTenIn">Top 10 In</div>
+                      <p>Comedy</p>
+                    </div>
+
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img src="img/png/emblaCard4.png" alt="Movies" />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <div class="gernes">
+                      <div class="topTenIn">Top 10 In</div>
+                      <p>Drama</p>
+                    </div>
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide">
+                <div class="Slidercard">
+                  <div class="photoContainer">
+                    <img src="img/png/emblaContainer7.png" alt="Movies" />
+                    <img class="imgFog" src="img/png/imgFog.png" />
+                  </div>
+                  <div class="action">
+                    <div class="gernes">
+                      <div class="topTenIn">Top 10 In</div>
+                      <p>Drama</p>
+                    </div>
+                    <button>
+                      <img
+                        class="nextButton"
+                        src="img/svg/arrow.svg"
+                        alt="next"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end top 10 gernes -->
+        <!-- start new releases -->
+        <div class="sliderMainContaienr" id="newReleases">
+          <div class="OurGanreSliderTopContainer">
+            <div class="sliderTopContainerCont">
+              <h2>New Releases</h2>
+            </div>
+            <div class="sliderArrowContainer">
+              <button id="prevThree">
+                <img src="img/svg/lefttArrow.svg" alt="prev" />
+              </button>
+              <div class="embla__dots">
+                <div class="embla__dot"></div>
+                <div class="embla__dot"></div>
+              </div>
+              <button id="nextThree">
+                <img
+                  class="nextButton"
+                  src="img/svg/lefttArrow.svg"
+                  alt="next"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="embla newRelease" id="emblaOurGanre">
+            <div class="embla__container">
+              <div class="embla__slide ourGanreSlider">
+                <div class="SlidercardRelease">
+                  <div id="photoContainer">
+                    <img
+                      id="movieListImg"
+                      src="img/png/adipurushMovie.png"
+                      alt="Movies"
+                    />
+                  </div>
+
+                  <div class="releases">
+                    <p>
+                      <span class="april14">Released at </span>14 April 2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="SlidercardRelease">
+                  <div id="photoContainer">
+                    <img
+                      id="movieListImg"
+                      src="img/png/shootouts.png"
+                      alt="Movies"
+                    />
+                  </div>
+
+                  <div class="releases">
+                    <p>
+                      <span class="april14">Released at </span> 22 April 2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="SlidercardRelease">
+                  <div id="photoContainer">
+                    <img
+                      id="movieListImg"
+                      src="img/png/sincity.png"
+                      alt="Movies"
+                    />
+                  </div>
+                  <div class="releases">
+                    <p>
+                      <span class="april14">Released at </span> 22 April 2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="SlidercardRelease">
+                  <div id="photoContainer">
+                    <img
+                      id="movieListImg"
+                      src="img/png/theTomorrowWar.png"
+                      alt="Movies"
+                    />
+                  </div>
+                  <div class="releases">
+                    <p>
+                      <span class="april14">Released at </span> 19 April 2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="SlidercardRelease">
+                  <div id="photoContainer">
+                    <img
+                      id="movieListImg"
+                      src="img/png/misfire.png"
+                      alt="Movies"
+                    />
+                  </div>
+                  <div class="releases">
+                    <p>
+                      <span class="aprilReleases">Released at </span> 11 April
+                      2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="embla__slide ourGanreSlider">
+                <div class="SlidercardRelease">
+                  <div id="photoContainer">
+                    <img
+                      id="movieListImg"
+                      src="img/png/antmanNewRelease.png"
+                      alt="Movies"
+                    />
+                  </div>
+                  <div class="releases">
+                    <p>
+                      <span class="aprilReleases">Released at </span> 11 March
+                      2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end new realeases -->
+        <div class="trailMainContainer">
+          <div class="trileOfferAds">
+            <h2>Start your free trial today!</h2>
+            <p>
+              This is a clear and concise call to action that encourages users
+              to sign up for a free trial of StreamVibe.
+            </p>
+          </div>
+          <button>Start a Free Trail</button>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footerMainContainer">
+        <div class="footerTopContainer">
+          <div class="sectionOne">
+            <section class="home">
+              <h5>Home</h5>
+              <a href="/">Categories</a>
+              <a href="/">Devices</a>
+              <a href="/">Pricing</a>
+              <a href="/">FAQ</a>
+            </section>
+            <section class="home">
+              <h5>Movies</h5>
+              <a href="/">Gernes</a>
+              <a href="/">Trending</a>
+              <a href="/">New Release</a>
+              <a href="/">Popular</a>
+            </section>
+          </div>
+          <div class="sectionTwo">
+            <section class="home">
+              <h5>Shows</h5>
+              <a href="/">Gernes</a>
+              <a href="/">Trending</a>
+              <a href="/">New Release</a>
+              <a href="/">Popular</a>
+            </section>
+            <section class="home">
+              <h5>Support</h5>
+              <a href="/">contact</a>
+            </section>
+          </div>
+          <div class="sectionThree">
+            <section class="home">
+              <h5>Subscription</h5>
+              <a href="/">Plans</a>
+              <a href="/">Features</a>
+            </section>
+            <section class="socmediaLinks">
+              <h5>Connect With Us</h5>
+              <div class="socialWebs">
+                <button>
+                  <img src="./img/svg/footerFacebook.svg" alt="FB" />
+                </button>
+
+                <button>
+                  <img src="./img/svg/footerTwitter.svg" alt="X" />
+                </button>
+
+                <button>
+                  <img src="./img/svg/footerLinkedInn.svg" alt="Linkedinn" />
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="bottomLine"></div>
+        <div class="footerBottomContainer">
+          <div class="footerCopyRight">
+            <p>@2023 streamvibe, All Rights Reserved</p>
+          </div>
+          <div class="footerUsefullLinks">
+            <a href="/">Terms of Use</a>
+            <div class="linkBorders"></div>
+            <a href="/">Privacy Policy</a>
+            <div class="linkBorders"></div>
+            <a href="/">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+    <script src="/js/global/common.js"></script>
+    <script src="/js/pages/service.js"></script>
   </body>
 </html>
