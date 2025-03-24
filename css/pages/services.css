@@ -612,3 +612,52 @@ main .embla#embla2 {
 .footerBottomContainer .footerUsefullLinks a {
   color: var(--colorPharagraf);
 }
+
+/* OUR GENRES start */
+.SlidercardRelease {
+  width: 224px;
+  height: 308px;
+  background-color: var(--colorPlanCardBg);
+  border: 1px solid var(--cardBackgroundColor);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#photoContainer {
+  margin: 16px 0;
+  height: 230px;
+  width: 192px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#movieListImg {
+  height: 230px;
+  width: 192px;
+}
+.releases {
+  width: 167px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #262626;
+  background-color: #141414;
+  border-radius: 52px;
+}
+.releases p {
+  font-size: 12px;
+  color: #bfbfbf;
+}
+
+.april14 {
+  color: #999999;
+}
+/* .SlidercardReleaseSixth {
+  display: none;
+  overflow: hidden;
+} */
+
+/* OUR GENRES END */
