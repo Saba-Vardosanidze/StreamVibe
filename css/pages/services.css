@@ -113,6 +113,27 @@ dialog input {
   max-width: 1440px;
   width: 100%;
 }
+.moviesContainer {
+  width: 1280px;
+  height: 2620px;
+  margin: 100px auto;
+  border-radius: 12px;
+  border: 1px solid var(--cardBackgroundColor);
+  position: relative;
+}
+.shows {
+  width: 91px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorButtons);
+  color: var(--colorWhite);
+  border-radius: 6px;
+  position: absolute;
+  left: 40px;
+  top: -20px;
+}
 .embla#embla1 {
   overflow: hidden;
   position: relative;
@@ -662,7 +683,7 @@ main .embla#embla2 {
 }
 /*  trending now*/
 
-/* OUR GENRES start */
+/* newRelese start */
 #newReleases {
   margin-top: 80px;
 }
@@ -708,3 +729,43 @@ main .embla#embla2 {
   color: var(--colorPharagraf);
 }
 /* OUR GENRES END */
+/*start mustWatched */
+.SlidercardRelease.slideCardMustWatched {
+  width: 285px;
+  height: 404px;
+}
+#movieListImg#mustWatchedMovielistimg {
+  width: 253px;
+  height: 324px;
+}
+.slideCardMustWatched #photoContainer {
+  width: 253px;
+  height: 324px;
+}
+.timeAndImdb {
+  width: 253px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timeAndImdb .imdb {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  background-color: var(--websiteBackgroundColor);
+  border-radius: 51px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--cardBackgroundColor);
+  gap: 4px;
+}
+.timeAndImdb .imdb img {
+  width: 74px;
+  height: 14px;
+}
+.timeAndImdb .imdb p {
+  color: var(--colorPharagraf);
+  font-weight: 500;
+  font-size: 12px;
+}
+/*end mustWatched */
