@@ -136,3 +136,23 @@ if (trending) {
     if (event.key === "ArrowLeft") embla3.scrollPrev();
   });
 }
+//
+const mustWatched = document.querySelector(".mustWatched");
+if (mustWatched) {
+  const embla3 = EmblaCarousel(mustWatched, {
+    loop: false,
+    align: "start",
+    slidesToScroll: 1,
+  });
+
+  const prev = document.getElementById("prevFive");
+  const next = document.getElementById("nextFive");
+
+  if (prev) prev.addEventListener("click", () => embla3.scrollPrev());
+  if (next) next.addEventListener("click", () => embla3.scrollNext());
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowRight") embla3.scrollNext();
+    if (event.key === "ArrowLeft") embla3.scrollPrev();
+  });
+}
