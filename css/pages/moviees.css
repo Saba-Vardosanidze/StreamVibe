@@ -192,6 +192,177 @@ dialog input {
   width: 24px;
   height: 24px;
 }
+.moviesMainContainer {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: var(--websiteBackgroundColor); */
+  background-color: purple;
+  margin-top: 80px;
+  display: flex;
+}
+.moviesMainContainer .mainLeftContainer {
+  max-width: 850px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mainLeftContainer .descriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+.mainLeftContainer .descriptionContainer p {
+  color: var(--colorPharagraf);
+  max-width: 770px;
+}
+.mainLeftContainer .descriptionContainer .filmDescription {
+  color: var(--colorWhite);
+}
+.mainLeftContainer .cast {
+  display: flex;
+  flex-direction: column;
+  max-width: 740px;
+}
+.mainLeftContainer .cast .casts {
+  display: flex;
+  justify-content: space-between;
+}
+.mainLeftContainer .cast .casts p {
+  color: var(--colorPharagraf);
+  display: flex;
+  align-items: center;
+}
+.mainLeftContainer .cast .casts .CastButtons {
+  display: flex;
+  gap: 8px;
+}
+.mainLeftContainer .cast .casts .CastButtons {
+  margin-left: 30px;
+}
+.mainLeftContainer .cast .casts .CastButtons .leftButton,
+.rightButton {
+  border-radius: 50%;
+  background-color: var(--colorBlack);
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+.mainLeftContainer .cast .actorspictures {
+  width: 770px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  margin-top: 20px;
+}
+.mainLeftContainer .cast .actorspictures .actors {
+  width: 87px;
+  height: 89px;
+}
+.mainLeftContainer .rateContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 740px;
+}
+.mainLeftContainer .reviewsAndAddreviewsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainLeftContainer .reviewsAndAddreviewsContainer p {
+  color: var(--colorPharagraf);
+}
+.mainLeftContainer
+  .rateContainer
+  .reviewsAndAddreviewsContainer
+  .addYourReview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background-color: var(--colorPlanCardBg);
+  width: 162px;
+  height: 48px;
+  border-radius: 6px;
+}
+.mainLeftContainer .filmrates {
+  display: flex;
+  max-width: 770px;
+  margin-top: 30px;
+}
+.mainLeftContainer .filmrates .rateLeftContainer {
+  display: flex;
+  flex-direction: column;
+}
+.mainLeftContainer .filmrates .rateLeftContainer .rateTopContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 317px;
+  align-items: center;
+}
+
+.mainLeftContainer .filmrates .rateLeftContainer .rateTopContainer .actiorName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filmrates .rateLeftContainer .actiorName h3 {
+  color: var(--colorWhite);
+}
+.filmrates .rateLeftContainer .actorCountry {
+  color: var(--colorPharagraf);
+}
+
+.filmrates .rateLeftContainer .ratebtnContainer img {
+  width: 112px;
+  height: 29px;
+}
+.filmrates .rateLeftContainer .rateBottomContainer {
+  width: 317px;
+  align-items: center;
+  color: var(--colorPharagraf);
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.filmrates .rateRightContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLeftContainer .filmrates .rateLeftContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.rateRightContainer .rateTopContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filmrates .rateRightContainer .actiorName h3 {
+  color: var(--colorWhite);
+}
+.filmrates .rateRightContainer .actorCountry {
+  color: var(--colorPharagraf);
+}
+
+/* .filmrates .rateRightContainer .ratebtnContainer img {
+  width: 112px;
+  height: 29px;
+} */
+.filmrates .rateLeftContainer .rateBottomContainer {
+  width: 317px;
+  align-items: center;
+  color: var(--colorPharagraf);
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.filmrates .rateRightContainer {
+  display: flex;
+  flex-direction: column;
+}
+.
 /* Start footer */
 
 .footerMainContainer {
