@@ -156,3 +156,43 @@ if (mustWatched) {
     if (event.key === "ArrowLeft") embla3.scrollPrev();
   });
 }
+//
+const ebmlaOurGanre = document.querySelector(".ebmlaOurGanre");
+if (ebmlaOurGanre) {
+  const embla3 = EmblaCarousel(ebmlaOurGanre, {
+    loop: false,
+    align: "start",
+    slidesToScroll: 1,
+  });
+
+  const prev = document.getElementById("prevSix");
+  const next = document.getElementById("nextSix");
+
+  if (prev) prev.addEventListener("click", () => embla3.scrollPrev());
+  if (next) next.addEventListener("click", () => embla3.scrollNext());
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowRight") embla3.scrollNext();
+    if (event.key === "ArrowLeft") embla3.scrollPrev();
+  });
+}
+//
+const topTenGanre = document.querySelector(".topTenGanre");
+if (topTenGanre) {
+  const embla3 = EmblaCarousel(topTenGanre, {
+    loop: false,
+    align: "start",
+    slidesToScroll: 1,
+  });
+
+  const prev = document.getElementById("prevSeven");
+  const next = document.getElementById("nextSeven");
+
+  if (prev) prev.addEventListener("click", () => embla3.scrollPrev());
+  if (next) next.addEventListener("click", () => embla3.scrollNext());
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowRight") embla3.scrollNext();
+    if (event.key === "ArrowLeft") embla3.scrollPrev();
+  });
+}
