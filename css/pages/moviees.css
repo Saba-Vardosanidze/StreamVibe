@@ -1,45 +1,45 @@
 body {
-  font-family: "Manrope", Courier, monospace;
   background-color: var(--websiteBackgroundColor);
+  font-family: "Manrope", Courier, monospace;
 }
 .mainContainer {
+  background-color: var(--websiteBackgroundColor);
   width: 100%;
   height: auto;
-  background-color: var(--websiteBackgroundColor);
 }
 header {
-  max-width: 1440px;
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 18px 80px;
+  align-items: center;
   margin: 0 auto;
+  padding: 18px 80px;
+  width: 100%;
+  max-width: 1440px;
 }
 header .headerUl {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--colorHeaderFooterBg);
+  border: 4px solid var(--colorPlanCardBg);
   border-radius: 12px;
+  background-color: var(--colorHeaderFooterBg);
   width: 450px;
   height: 61px;
-  border: 4px solid var(--colorPlanCardBg);
 }
 .headerUl ul {
   display: flex;
-  list-style: none;
   gap: 2px;
   margin-bottom: 2px;
+  list-style: none;
 }
 .headerUl ul li a {
-  text-decoration: none;
   transition: background 0.3s ease;
   border-radius: 8px;
+  padding: 12px 20px;
   color: var(--textColor);
   font-size: 13px;
   line-height: 21px;
-  padding: 12px 20px;
+  text-decoration: none;
 }
 .headerUl ul li a:hover,
 .headerUl ul li a.active,
@@ -49,36 +49,36 @@ header .headerUl {
 }
 .headerIcons {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 62px;
 }
 .headerIcons img {
   display: flex;
+  transition: 0.3s ease;
+  cursor: pointer;
   width: 24px;
   height: 24px;
-  cursor: pointer;
-  transition: 0.3s ease;
 }
 .headerIcons img:hover {
   opacity: 0.7;
 }
 header .menuIcon {
   display: none;
-  background-color: var(--colorPlanCardBg);
-  border-radius: 6px;
   border: 3px solid var(--cardBackgroundColor);
+  border-radius: 6px;
+  background-color: var(--colorPlanCardBg);
+  padding: 15px 12px;
   width: 48px;
   height: 48px;
-  padding: 15px 12px;
 }
 dialog {
   margin: auto;
-  border: none;
-  border-radius: 26px;
   margin-top: 100px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border: none;
+  border-radius: 26px;
   input[type="search"]::-webkit-search-decoration,
   input[type="search"]::-webkit-search-cancel-button,
   input[type="search"]::-webkit-search-results-button,
@@ -88,79 +88,79 @@ dialog {
 }
 
 dialog::backdrop {
-  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.5);
 }
 dialog input {
-  border-radius: 26px;
-  width: 1000px;
-  height: 40px;
   outline: none;
   border: none;
+  border-radius: 26px;
   padding: 0px 28px;
+  width: 1000px;
+  height: 40px;
   color: var(--colorPlanCardBg);
   font-size: 18px;
 }
 .filmContainer {
-  max-width: 1280px;
-  height: 709px;
-  width: 100%;
   display: flex;
-  align-items: end;
   justify-content: center;
+  align-items: end;
   margin: 0 auto;
   background-image: url(../../pages/img/png/moviesHeroContainer.png);
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1280px;
+  height: 709px;
 }
 .filmContainer img {
   width: 100%;
 }
 .movieDescription {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
   margin: 0 auto;
+  width: 100%;
 }
 .movieDescription h2 {
-  width: 100%;
   margin: auto;
-  font-size: 48px;
-  font-weight: 700;
-  color: var(--colorWhite);
-  text-align: center;
   margin-bottom: 10px;
+  width: 100%;
+  color: var(--colorWhite);
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
 }
 .movieDescription p {
-  width: 100%;
   margin: auto;
+  width: 100%;
+  color: var(--colorPharagraf);
   font-size: 14px;
   text-align: center;
-  color: var(--colorPharagraf);
 }
 .movieButtonContainer {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .watchBtn {
-  background-color: var(--colorButtons);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.5s ease;
   margin: 40px auto;
   border-radius: 8px;
-  transition: all 0.5s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  height: 54px;
+  background-color: var(--colorButtons);
   width: 128px;
+  height: 54px;
 }
 .watchBtn img {
+  margin-left: 24px;
   width: 15px;
   height: 15px;
-  margin-left: 24px;
 }
 .watchBtn p {
   color: var(--colorWhite);
@@ -175,15 +175,15 @@ dialog input {
   gap: 8px;
 }
 .arrowButoon {
-  width: 44px;
-  background-color: var(--colorBlack);
-  height: 44px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 6px;
-  border: 1px solid var(--cardBackgroundColor);
+  align-items: center;
   transition: background 400ms ease-in-out;
+  border: 1px solid var(--cardBackgroundColor);
+  border-radius: 6px;
+  background-color: var(--colorBlack);
+  width: 44px;
+  height: 44px;
 }
 .arrowButoon:hover {
   background-color: var(--cardBackgroundColor);
@@ -193,28 +193,30 @@ dialog input {
   height: 24px;
 }
 .moviesMainContainer {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  /* background-color: var(--websiteBackgroundColor); */
-  background-color: purple;
-  margin-top: 80px;
   display: flex;
+  margin: 0 auto;
+  margin-top: 80px;
+  background-color: var(--websiteBackgroundColor);
+
+  width: 100%;
+  max-width: 1280px;
 }
 .moviesMainContainer .mainLeftContainer {
-  max-width: 850px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+  max-width: 850px;
 }
 .mainLeftContainer .descriptionContainer {
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  background-color: var(--colorPlanCardBg);
 }
 .mainLeftContainer .descriptionContainer p {
-  color: var(--colorPharagraf);
   max-width: 770px;
+  color: var(--colorPharagraf);
 }
 .mainLeftContainer .descriptionContainer .filmDescription {
   color: var(--colorWhite);
@@ -222,16 +224,18 @@ dialog input {
 .mainLeftContainer .cast {
   display: flex;
   flex-direction: column;
-  max-width: 740px;
+  border-radius: 10px;
+  background-color: var(--colorPlanCardBg);
+  max-width: 850px;
 }
 .mainLeftContainer .cast .casts {
   display: flex;
   justify-content: space-between;
 }
 .mainLeftContainer .cast .casts p {
-  color: var(--colorPharagraf);
   display: flex;
   align-items: center;
+  color: var(--colorPharagraf);
 }
 .mainLeftContainer .cast .casts .CastButtons {
   display: flex;
@@ -244,16 +248,16 @@ dialog input {
 .rightButton {
   border-radius: 50%;
   background-color: var(--colorBlack);
+  padding: 12px;
   width: 44px;
   height: 44px;
-  padding: 12px;
 }
 .mainLeftContainer .cast .actorspictures {
-  width: 770px;
   display: flex;
   flex-wrap: nowrap;
   gap: 6px;
   margin-top: 20px;
+  width: 770px;
 }
 .mainLeftContainer .cast .actorspictures .actors {
   width: 87px;
@@ -262,7 +266,8 @@ dialog input {
 .mainLeftContainer .rateContainer {
   display: flex;
   flex-direction: column;
-  max-width: 740px;
+  background-color: var(--colorPlanCardBg);
+  max-width: 850px;
 }
 .mainLeftContainer .reviewsAndAddreviewsContainer {
   display: flex;
@@ -277,29 +282,31 @@ dialog input {
   .reviewsAndAddreviewsContainer
   .addYourReview {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 2px;
-  background-color: var(--colorPlanCardBg);
+  border-radius: 6px;
+
   width: 162px;
   height: 48px;
-  border-radius: 6px;
 }
 .mainLeftContainer .filmrates {
   display: flex;
-  max-width: 770px;
-  margin-top: 30px;
   justify-content: space-between;
+  margin-top: 30px;
+  background-color: var(--colorPlanCardBg);
+  max-width: 850px;
 }
 .mainLeftContainer .filmrates .rateLeftContainer {
   display: flex;
   flex-direction: column;
+  background-color: var(--colorBlack);
 }
 .mainLeftContainer .filmrates .rateLeftContainer .rateTopContainer {
   display: flex;
   justify-content: space-between;
-  width: 317px;
   align-items: center;
+  width: 317px;
 }
 
 .mainLeftContainer .filmrates .rateLeftContainer .rateTopContainer .actiorName {
@@ -320,21 +327,23 @@ dialog input {
   height: 29px;
 }
 .filmrates .rateLeftContainer .rateBottomContainer {
-  width: 317px;
   align-items: center;
-  color: var(--colorPharagraf);
-  margin-bottom: 16px;
   margin-top: 16px;
+  margin-bottom: 30px;
+  width: 317px;
+  color: var(--colorPharagraf);
 }
 .filmrates .rateRightContainer {
   display: flex;
   flex-direction: column;
+  background-color: var(--colorBlack);
   width: 317px;
 }
 
 .mainLeftContainer .filmrates .rateLeftContainer {
   display: flex;
   flex-direction: column;
+  background-color: var();
 }
 
 .rateRightContainer .rateTopContainer {
@@ -354,8 +363,9 @@ dialog input {
   height: 29px;
 }
 .filmrates .rateRighttContainer .rateBottomContainer p {
-  width: 317px;
   align-items: center;
+  margin-top: 16px;
+  width: 317px;
   color: var(--colorPharagraf);
 }
 .filmrates .rateRightContainer {
@@ -366,13 +376,13 @@ dialog input {
 /* Start footer */
 
 .footerMainContainer {
-  width: 100%;
   background-color: var(--colorBlack);
   padding-top: 80px;
+  width: 100%;
 }
 .footerMainContainer section a:hover {
-  color: var(--textColor);
   transition: color 0.5s ease;
+  color: var(--textColor);
 }
 .sectionOne {
   display: flex;
@@ -384,59 +394,66 @@ dialog input {
   display: flex;
 }
 .footerMainContainer .footerTopContainer {
-  max-width: 1220px;
-
   display: flex;
   gap: 20px;
   margin: 0 auto;
+  max-width: 1220px;
 }
 .footerTopContainer section {
-  width: 196px;
   display: flex;
   flex-direction: column;
+  width: 196px;
 }
 .footerTopContainer section h5 {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--colorWhite);
   margin-bottom: 20px;
+  color: var(--colorWhite);
+  font-weight: 600;
+  font-size: 18px;
 }
 .footerTopContainer section a {
-  font-size: 16px;
-  color: var(--colorPharagraf);
   margin-top: 10px;
+  color: var(--colorPharagraf);
+  font-size: 16px;
 }
 .footerTopContainer .socialWebs {
   display: flex;
   gap: 10px;
 }
 .bottomLine {
-  max-width: 1220px;
-  border-top: 1px solid var(--cardBackgroundColor);
   margin: 0 auto;
   margin-top: 80px;
+  border-top: 1px solid var(--cardBackgroundColor);
+  max-width: 1220px;
 }
 .footerBottomContainer {
-  max-width: 1220px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  max-width: 1220px;
 }
 .footerBottomContainer .footerCopyRight {
   margin-top: 20px;
-  color: var(--colorPharagraf);
   margin-bottom: 40px;
+  color: var(--colorPharagraf);
 }
 .footerBottomContainer .footerUsefullLinks {
-  margin-top: 20px;
   display: flex;
   gap: 16px;
+  margin-top: 20px;
 }
 .footerBottomContainer .linkBorders {
-  height: 21px;
   border-left: 1px solid var(--colorPharagraf);
+  height: 21px;
 }
 .footerBottomContainer .footerUsefullLinks a {
+  color: var(--colorPharagraf);
+}
+.filmrates .rateRightContainer .rateBottomContainer {
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  /* margin-bottom: 16px; */
+  width: 317px;
   color: var(--colorPharagraf);
 }
 /* End footer */
