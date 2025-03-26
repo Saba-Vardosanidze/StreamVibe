@@ -196,3 +196,23 @@ if (topTenGanre) {
     if (event.key === "ArrowLeft") embla3.scrollPrev();
   });
 }
+//
+const TrendingShows = document.querySelector(".TrendingShowsNow");
+if (TrendingShows) {
+  const embla3 = EmblaCarousel(TrendingShows, {
+    loop: false,
+    align: "start",
+    slidesToScroll: 1,
+  });
+
+  const prev = document.getElementById("prevEight");
+  const next = document.getElementById("nextEight");
+
+  if (prev) prev.addEventListener("click", () => embla3.scrollPrev());
+  if (next) next.addEventListener("click", () => embla3.scrollNext());
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowRight") embla3.scrollNext();
+    if (event.key === "ArrowLeft") embla3.scrollPrev();
+  });
+}
