@@ -125,7 +125,7 @@ dialog input {
 }
 .movieDescription h2 {
   margin: auto;
-  margin-bottom: 10px;
+
   width: 100%;
   color: var(--colorWhite);
   font-weight: 700;
@@ -211,8 +211,14 @@ dialog input {
 .mainLeftContainer .descriptionContainer {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   border-radius: 10px;
   background-color: var(--colorPlanCardBg);
+  padding: 50px;
+  height: 162px;
+}
+.description {
+  width: 770px;
 }
 .mainLeftContainer .descriptionContainer p {
   max-width: 770px;
@@ -224,17 +230,23 @@ dialog input {
 .mainLeftContainer .cast {
   display: flex;
   flex-direction: column;
+
   border-radius: 10px;
   background-color: var(--colorPlanCardBg);
   max-width: 850px;
 }
-.mainLeftContainer .cast .casts {
+.mainLeftContainer .cast .casts,
+.castButtons {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  margin: 40px 40px 20px;
+  width: 770px;
 }
 .mainLeftContainer .cast .casts p {
   display: flex;
   align-items: center;
+  padding-left: 5px;
   color: var(--colorPharagraf);
 }
 .mainLeftContainer .cast .casts .CastButtons {
@@ -255,8 +267,10 @@ dialog input {
 .mainLeftContainer .cast .actorspictures {
   display: flex;
   flex-wrap: nowrap;
-  gap: 6px;
-  margin-top: 20px;
+  gap: 10px;
+  margin: 0 auto;
+
+  margin-bottom: 40px;
   width: 770px;
 }
 .mainLeftContainer .cast .actorspictures .actors {
@@ -266,6 +280,7 @@ dialog input {
 .mainLeftContainer .rateContainer {
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
   background-color: var(--colorPlanCardBg);
   max-width: 850px;
 }
@@ -273,6 +288,7 @@ dialog input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 40px 40px 30px 40px;
 }
 .mainLeftContainer .reviewsAndAddreviewsContainer p {
   color: var(--colorPharagraf);
@@ -286,50 +302,56 @@ dialog input {
   align-items: center;
   gap: 2px;
   border-radius: 6px;
-
+  background-color: var(--colorBlack);
   width: 162px;
   height: 48px;
 }
 .mainLeftContainer .filmrates {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin: 0px 40px 30px;
   background-color: var(--colorPlanCardBg);
   max-width: 850px;
 }
 .mainLeftContainer .filmrates .rateLeftContainer {
   display: flex;
   flex-direction: column;
+  border-radius: 12px;
   background-color: var(--colorBlack);
+  width: 377px;
 }
-.mainLeftContainer .filmrates .rateLeftContainer .rateTopContainer {
+.mainLeftContainer .filmrates .rateTopContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
   width: 317px;
 }
 
-.mainLeftContainer .filmrates .rateLeftContainer .rateTopContainer .actiorName {
+.mainLeftContainer .filmrates .rateTopContainer .actiorName {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.filmrates .rateLeftContainer .actiorName h3 {
+.filmrates .actiorName h3 {
   color: var(--colorWhite);
 }
-.filmrates .rateLeftContainer .actorCountry {
+.filmrates .actorCountry {
   color: var(--colorPharagraf);
+}
+.leftContParagraph {
+  margin-top: 16px;
 }
 
 .filmrates img {
   width: 112px;
   height: 29px;
 }
-.filmrates .rateLeftContainer .rateBottomContainer {
+.filmrates .rateBottomContainer {
   align-items: center;
-  margin-top: 16px;
-  margin-bottom: 30px;
+  margin: 0 auto;
   width: 317px;
   color: var(--colorPharagraf);
 }
@@ -346,31 +368,26 @@ dialog input {
   background-color: var();
 }
 
-.rateRightContainer .rateTopContainer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.filmrates .rateRightContainer .actiorName h3 {
+.filmrates .actiorName h3 {
   color: var(--colorWhite);
 }
-.filmrates .rateRightContainer .actorCountry {
+.filmrates .actorCountry {
   color: var(--colorPharagraf);
 }
 
-.filmrates .rateRightContainer .ratebtnContainer img {
+.filmrates .ratebtnContainer img {
   width: 112px;
   height: 29px;
 }
-.filmrates .rateRighttContainer .rateBottomContainer p {
-  align-items: center;
-  margin-top: 16px;
+.filmrates .rateBottomContainer p {
   width: 317px;
   color: var(--colorPharagraf);
 }
 .filmrates .rateRightContainer {
   display: flex;
   flex-direction: column;
+  border-radius: 12px;
+  width: 377px;
 }
 
 /* Start footer */
