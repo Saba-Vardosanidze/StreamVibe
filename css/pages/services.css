@@ -780,8 +780,11 @@ main .embla#embla2 {
   font-weight: 500;
   color: var(--colorPharagraf);
 }
-.timeAndImdb .imdb {
+.timeAndImdb .imdbs {
   gap: 6px;
   width: 88px;
 }
 /* end trending shows now */
+.showsContainer {
+  height: 2815px;
+}
