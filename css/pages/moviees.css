@@ -289,6 +289,7 @@ dialog input {
   display: flex;
   max-width: 770px;
   margin-top: 30px;
+  justify-content: space-between;
 }
 .mainLeftContainer .filmrates .rateLeftContainer {
   display: flex;
@@ -314,7 +315,7 @@ dialog input {
   color: var(--colorPharagraf);
 }
 
-.filmrates .rateLeftContainer .ratebtnContainer img {
+.filmrates img {
   width: 112px;
   height: 29px;
 }
@@ -328,6 +329,7 @@ dialog input {
 .filmrates .rateRightContainer {
   display: flex;
   flex-direction: column;
+  width: 317px;
 }
 
 .mainLeftContainer .filmrates .rateLeftContainer {
@@ -347,22 +349,20 @@ dialog input {
   color: var(--colorPharagraf);
 }
 
-/* .filmrates .rateRightContainer .ratebtnContainer img {
+.filmrates .rateRightContainer .ratebtnContainer img {
   width: 112px;
   height: 29px;
-} */
-.filmrates .rateLeftContainer .rateBottomContainer {
+}
+.filmrates .rateRighttContainer .rateBottomContainer p {
   width: 317px;
   align-items: center;
   color: var(--colorPharagraf);
-  margin-bottom: 16px;
-  margin-top: 16px;
 }
 .filmrates .rateRightContainer {
   display: flex;
   flex-direction: column;
 }
-.
+
 /* Start footer */
 
 .footerMainContainer {
