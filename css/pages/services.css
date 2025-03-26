@@ -769,3 +769,19 @@ main .embla#embla2 {
   font-size: 12px;
 }
 /*end mustWatched */
+/* start trending shows now */
+
+.timeAndImdb .imdb .folders {
+  width: 20px;
+  height: 20px;
+}
+.timeAndImdb .imdb .seasons {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--colorPharagraf);
+}
+.timeAndImdb .imdb {
+  gap: 6px;
+  width: 88px;
+}
+/* end trending shows now */
