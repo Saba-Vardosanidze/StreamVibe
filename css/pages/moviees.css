@@ -194,6 +194,7 @@ dialog input {
 }
 .moviesMainContainer {
   display: flex;
+  gap: 20px;
   margin: 0 auto;
   margin-top: 80px;
   background-color: var(--websiteBackgroundColor);
@@ -388,6 +389,14 @@ dialog input {
   flex-direction: column;
   border-radius: 12px;
   width: 377px;
+}
+.mainRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: purple;
+  max-width: 416px;
+  height: 762px;
 }
 
 /* Start footer */
