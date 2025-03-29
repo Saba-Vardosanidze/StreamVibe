@@ -397,7 +397,7 @@ dialog input {
   background-color: var(--colorPlanCardBg);
   padding: 40px;
   max-width: 416px;
-  height: 720px;
+  height: 762px;
 }
 .mainRightContaine .section {
   display: flex;
@@ -438,6 +438,8 @@ dialog input {
   width: 72px;
   height: 33px;
   color: var(--colorWhite);
+  border: 1px solid var(--cardBackgroundColor);
+
   font-size: 14px;
 }
 .mainRightContainer .ratings {
@@ -456,27 +458,32 @@ dialog input {
   display: flex;
   gap: 16px;
 }
-
-.mainRightContainer .ratingsBottomContainers .imdbContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  margin-top: 10px;
-  border-radius: 8px;
-  background-color: var(--colorBlack);
-  width: 160px;
-  height: 77px;
-}
-.mainRightContainer .ratingsBottomContainers .imdbContainer p {
-  width: 105px;
+.mainRightContainer .ratingsBottomContainers .imdbContainer .imdbTitle {
   color: var(--colorWhite);
+  margin-right: 55px;
+}
+.imdbRate {
+  color: var(--colorWhite);
+  margin-right: 87px;
 }
 .mainRightContainer .ratingsBottomContainer .buttonContainer {
   display: flex;
 }
-
+.buttonContainer button {
+  width: 116px;
+  height: 21px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+.buttonContainer button img {
+  width: 94px;
+  height: 18px;
+}
+.buttonContainer button p {
+  color: var(--colorWhite);
+}
 .mainRightContainer .ratingsBottomContainers .imdbContainer img {
   width: 116px;
   height: 30px;
@@ -492,6 +499,7 @@ dialog input {
   background-color: var(--colorBlack);
   width: 160px;
   height: 77px;
+  border: 1px solid var(--cardBackgroundColor);
 }
 .mainRightContainer .gernesMaincontainer {
   display: flex;
@@ -540,6 +548,14 @@ dialog input {
   gap: 3px;
   margin-right: 7px;
   width: 336px;
+  background-color: var(--colorBlack);
+  border: 1px solid var(--cardBackgroundColor);
+  align-items: center;
+  border-radius: 8px;
+  height: 74px;
+}
+.filmDirectorBottomContainer img {
+  margin-left: 12px;
 }
 .filmDirectorBottomContainer h3 {
   color: var(--colorWhite);
@@ -559,6 +575,14 @@ dialog input {
   gap: 3px;
   margin-right: 7px;
   width: 336px;
+  background-color: var(--colorBlack);
+  border: 1px solid var(--cardBackgroundColor);
+  align-items: center;
+  border-radius: 8px;
+  height: 74px;
+}
+.musicCreatorBottomCont img {
+  margin-left: 12px;
 }
 .musicCreatorBottomCont h3 {
   color: var(--colorWhite);
