@@ -75,6 +75,8 @@ header .menuIcon {
 main .sliderTopMainContainer {
   display: flex;
   align-items: end;
+  max-width: 1280px;
+  width: 100%;
   gap: 80px;
 }
 main .sliderMainContaienr {
@@ -88,6 +90,7 @@ main .sliderMainContaienr {
 }
 main .embla {
   max-width: 1279px;
+  width: 100%;
   overflow: hidden;
   margin: auto;
 }
@@ -388,7 +391,8 @@ dialog input {
 }
 /*  */
 .frequentlyAskedQuestions {
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   background-color: var(--websiteBackgroundColor);
   margin: 0 auto;
   display: flex;
@@ -403,8 +407,10 @@ dialog input {
   justify-content: space-between;
   align-items: end;
 }
+
 .frequentlyTopCont .titleContainer {
-  width: 1280;
+  max-width: 1280px;
+  width: 100%;
   height: 76px;
   display: flex;
   flex-direction: column;
@@ -437,12 +443,14 @@ dialog input {
 }
 .frequentlyAskedQuestions .frequentlyBottomCont {
   display: flex;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   gap: 40px;
 }
 
 .frequentlyBottomCont .frequentlyLeftCont {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 60px;
@@ -450,7 +458,8 @@ dialog input {
 }
 
 .questionSections {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -467,13 +476,21 @@ dialog input {
   margin-right: 16px;
   border-radius: 8px;
 }
+.questionCont {
+  max-width: 506px;
+  width: 100%;
+}
 .questionCont .askContainer {
-  width: 506px;
+  max-width: 506px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 .showElements {
+  max-width: 620px;
+  width: 100%;
   display: flex;
 }
 
@@ -511,7 +528,8 @@ dialog input {
 }
 
 .frequentlyBottomCont .frequentlyRightCont {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 60px;
@@ -533,7 +551,8 @@ dialog input {
   align-items: end;
 }
 .chosePlan .chosePlanHeader .chosePlanTitle {
-  width: 1010px;
+  max-width: 1010px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -549,7 +568,8 @@ dialog input {
   color: var(--colorPharagraf);
 }
 .chosePlan .chosePlanHeader .chosePlanButtonContainer {
-  width: 190px;
+  max-width: 190px;
+  width: 100%;
   height: 61px;
   border-radius: 8px;
   border: 1px solid var(--cardBackgroundColor);
@@ -575,11 +595,15 @@ dialog input {
   color: var(--colorWhite);
 }
 .chosePlan .offersMainContainer {
-  gap: 20px;
+  max-width: 1280px;
+  width: 100%;
+  justify-content: space-between;
   display: flex;
+  margin: auto;
 }
 .chosePlan .offersMainContainer .usersOffersContainer {
-  width: 414px;
+  max-width: 414px;
+  width: 100%;
   height: 345px;
   background-color: var(--colorPlanCardBg);
   border: 1px solid var(--cardBackgroundColor);
@@ -629,7 +653,8 @@ dialog input {
 }
 .offersMainContainer .usersOffersContainer .chooseButton {
   margin-left: 40px;
-  width: 334px;
+  max-width: 334px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -730,22 +755,32 @@ dialog input {
 }
 .sectionOne {
   display: flex;
+  justify-content: space-between;
+  max-width: 420px;
+  width: 100%;
 }
 .sectionTwo {
   display: flex;
+  justify-content: space-between;
+  max-width: 420px;
+  width: 100%;
 }
 .sectionThree {
   display: flex;
+  justify-content: space-between;
+  max-width: 420px;
+  width: 100%;
 }
 .footerMainContainer .footerTopContainer {
   max-width: 1220px;
-
+  width: 100%;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   margin: 0 auto;
 }
 .footerTopContainer section {
-  width: 196px;
+  max-width: 197px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -1064,71 +1099,6 @@ dialog input {
   .showMenu {
     max-width: 100%;
   }
-  .chosePlan .chosePlanHeader {
-    width: 358px;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
-  }
-  .chosePlan .chosePlanHeader .chosePlanTitle {
-    width: 358px;
-  }
-  .chosePlan .chosePlanHeader .chosePlanTitle h2 {
-    width: 340px;
-    font-size: 24px;
-  }
-  .chosePlan .chosePlanHeader .chosePlanTitle p {
-    font-weight: 400;
-    font-size: 14px;
-    width: 358px;
-  }
-  .chosePlan {
-    margin-top: 80px;
-    gap: 40px;
-  }
-  .chosePlan .offersMainContainer {
-    flex-direction: column;
-  }
-  .chosePlan .offersMainContainer .usersOffersContainer {
-    width: 358px;
-    height: 275px;
-    gap: 25px;
-  }
-  .chosePlan .offersMainContainer .usersOffersContainer .offerType {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 24px;
-  }
-  .chosePlan .offersMainContainer .usersOffersContainer .offerType h3 {
-    color: var(--colorWhite);
-    font-size: 18px;
-  }
-  .chosePlan .offersMainContainer .usersOffersContainer .offerType p {
-    font-weight: 400;
-    font-size: 14px;
-    width: 310px;
-  }
-  .chosePlan .offersMainContainer .usersOffersContainer .price {
-    margin-left: 24px;
-  }
-  .chosePlan .offersMainContainer .usersOffersContainer .price .packetPrice {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .chosePlan .offersMainContainer .usersOffersContainer .price span {
-    font-size: 16px;
-    margin-left: 2px;
-    font-size: 14px;
-  }
-  .offersMainContainer .usersOffersContainer .chooseButton {
-    margin-left: 24px;
-    width: 310px;
-  }
-  .usersOffersContainer .chooseButton button {
-    width: 149px;
-    height: 49px;
-  }
   .trailMainContainer {
     background: linear-gradient(
         180deg,
@@ -1159,8 +1129,31 @@ dialog input {
     font-size: 14px;
     font-weight: 400;
   }
+  .footerMainContainer .footerTopContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerMainContainer .socmediaLinks {
+    display: flex;
+  }
+
+  .footerBottomContainer {
+    width: 390px;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 82px;
+  }
+  .footerBottomContainer .footerUsefullLinks {
+    margin-top: 0px;
+  }
+  .footerBottomContainer .footerCopyRight {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1305px) {
   .frequentlyAskedQuestions {
-    margin-top: 80px;
+    width: 358px;
+    margin: 80px auto;
   }
   .frequentlyTopCont {
     display: flex;
@@ -1194,7 +1187,6 @@ dialog input {
   .questionCont .askContainer {
     width: 290px;
   }
-
   .questionCont .question {
     margin-top: 0;
     margin-bottom: 0;
@@ -1232,24 +1224,71 @@ dialog input {
   .deleteContainer {
     display: none;
   }
-  .footerMainContainer .footerTopContainer {
+  .chosePlan .chosePlanHeader {
+    width: 358px;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    gap: 20px;
   }
-  .footerMainContainer .socmediaLinks {
+  .chosePlan .chosePlanHeader .chosePlanTitle {
+    width: 358px;
+  }
+  .chosePlan .chosePlanHeader .chosePlanTitle h2 {
+    width: 340px;
+    font-size: 24px;
+  }
+  .chosePlan .chosePlanHeader .chosePlanTitle p {
+    font-weight: 400;
+    font-size: 14px;
+    width: 358px;
+  }
+  .chosePlan {
+    margin-top: 80px;
+    gap: 40px;
+  }
+  .chosePlan .offersMainContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer {
+    width: 358px;
+    height: 275px;
+    gap: 25px;
+    margin: auto;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .offerType {
     display: flex;
-  }
-
-  .footerBottomContainer {
-    width: 390px;
-    margin: 0 auto;
     flex-direction: column;
-    height: 82px;
+    gap: 10px;
+    margin-left: 24px;
   }
-  .footerBottomContainer .footerUsefullLinks {
-    margin-top: 0px;
+  .chosePlan .offersMainContainer .usersOffersContainer .offerType h3 {
+    color: var(--colorWhite);
+    font-size: 18px;
   }
-  .footerBottomContainer .footerCopyRight {
-    margin-bottom: 0;
+  .chosePlan .offersMainContainer .usersOffersContainer .offerType p {
+    font-weight: 400;
+    font-size: 14px;
+    width: 310px;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .price {
+    margin-left: 24px;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .price .packetPrice {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .chosePlan .offersMainContainer .usersOffersContainer .price span {
+    font-size: 16px;
+    margin-left: 2px;
+    font-size: 14px;
+  }
+  .offersMainContainer .usersOffersContainer .chooseButton {
+    margin-left: 24px;
+    width: 310px;
+  }
+  .usersOffersContainer .chooseButton button {
+    width: 149px;
+    height: 49px;
   }
 }
