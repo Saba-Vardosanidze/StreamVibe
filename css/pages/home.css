@@ -187,6 +187,9 @@ main .embla {
   flex-direction: column;
   align-items: center;
 }
+.sliderMainContaienr .Slidercard .photoContainer img {
+  object-fit: cover;
+}
 .sliderMainContaienr .Slidercard .photoContainer {
   width: 191px;
   height: 210px;
@@ -784,7 +787,7 @@ dialog input {
   display: flex;
   flex-direction: column;
 }
-.footerTopContainer section h5 {
+.footerTopContainer section h2 {
   font-size: 18px;
   font-weight: 600;
   color: var(--colorWhite);
