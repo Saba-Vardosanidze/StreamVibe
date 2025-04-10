@@ -1,12 +1,14 @@
 body {
   font-family: "Manrope", Courier, monospace;
-  background-color: var(--websiteBackgroundColor);
 }
 .mainContainer {
-  width: 100%;
+  max-width: 1440px;
+  padding: 18px 80px 0px;
   height: auto;
   margin: 0 auto;
   background-color: var(--websiteBackgroundColor);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 header {
   max-width: 1440px;
@@ -14,7 +16,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 80px;
 }
 header .headerUl {
   display: flex;
@@ -30,7 +31,6 @@ header .headerUl {
   display: flex;
   list-style: none;
   gap: 2px;
-  margin-bottom: 2px;
 }
 .headerUl ul li a {
   text-decoration: none;
@@ -50,8 +50,9 @@ header .headerUl {
 .headerIcons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 62px;
+  justify-content: end;
+  gap: 18px;
+  width: 167px;
 }
 .headerIcons img {
   display: flex;
@@ -62,15 +63,6 @@ header .headerUl {
 }
 .headerIcons img:hover {
   opacity: 0.7;
-}
-header .menuIcon {
-  display: none;
-  background-color: var(--colorPlanCardBg);
-  border-radius: 6px;
-  border: 3px solid var(--cardBackgroundColor);
-  width: 48px;
-  height: 48px;
-  padding: 15px 12px;
 }
 main .sliderTopMainContainer {
   display: flex;
@@ -223,101 +215,127 @@ main .embla {
   border-radius: 6px;
   left: 0;
 }
-/* Hero section start*/
-.heroContainer {
-  max-width: 1440px;
-  width: 100%;
-  background: linear-gradient(
-      0deg,
-      rgba(20, 20, 20, 1) 0%,
-      rgba(20, 20, 20, 1) 17%,
-      rgba(20, 20, 20, 0.47942927170868344) 43%,
-      rgba(20, 20, 20, 1) 100%
-    ),
-    url(../../pages/img/png/herosectionbg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-bottom: 150px;
-  margin: 0 auto;
+.menuIcon {
+  display: none;
+  background-color: var(--colorPlanCardBg);
+  border-radius: 6px;
+  border: 3px solid var(--cardBackgroundColor);
+  width: 48px;
+  height: 48px;
+  padding: 15px 12px;
 }
-dialog {
-  margin: auto;
-  border: none;
-  border-radius: 26px;
-  margin-top: 100px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  input[type="search"]::-webkit-search-decoration,
-  input[type="search"]::-webkit-search-cancel-button,
-  input[type="search"]::-webkit-search-results-button,
-  input[type="search"]::-webkit-search-results-decoration {
-    -webkit-appearance: none;
+@media (max-width: 921px) {
+  .sliderTopMainContainer .sliderTopContainer {
+    max-width: 358px;
+    height: 143px;
+  }
+  .sliderTopMainContainer .sliderTopContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    width: 358px;
+    height: 72px;
+  }
+  .sliderTopMainContainer .sliderTopContainer p {
+    font-size: 14px;
+    height: 63px;
+    max-width: 358px;
+  }
+  main .embla {
+    max-width: 376px;
+    margin: 0 auto;
+  }
+  .sliderTopMainContainer {
+    width: 358px;
+  }
+  .sliderMainContaienr .Slidercard {
+    width: 178px;
+    height: 201px;
+  }
+  main .sliderMainContaienr {
+    gap: 40px;
+  }
+  .sliderMainContaienr .Slidercard .photoContainer {
+    width: 138px;
+    height: 140px;
+  }
+  .photoContainer img {
+    width: 138px;
+    height: 140px;
+  }
+  .sliderMainContaienr .Slidercard .photoContainer .imgFog {
+    width: 138px;
+    height: 140px;
+  }
+  .sliderMainContaienr .Slidercard .action {
+    width: 138px;
+    height: 21px;
+  }
+  .sliderMainContaienr .Slidercard .action p {
+    font-size: 14px;
+  }
+  .sliderArrowContainer.sliderArrowContainerMedaiQuere {
+    display: flex;
+  }
+  .sliderArrowContainer {
+    display: none;
+  }
+  header {
+    max-width: 390px;
+    height: 102px;
+    padding: 46px 16px;
+  }
+  header .headerUl {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-radius: 0px;
+  }
+  header .headerIcons {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
   }
 }
 
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-}
-dialog input {
-  border-radius: 26px;
-  width: 1000px;
-  height: 40px;
-  outline: none;
-  border: none;
-  padding: 0px 28px;
-  color: var(--colorPlanCardBg);
-  font-size: 18px;
-}
-.playIconContainer {
-  width: 300px;
-  margin: 101px auto;
-  cursor: pointer;
-  transition: 500ms ease;
-}
-.playIconContainer:hover {
-  scale: 1.1;
-}
-.siteIntro {
-  display: flex;
-  flex-direction: column;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-.siteIntro h2 {
-  font-size: 48px;
-  font-weight: 700;
-  color: var(--colorWhite);
-  text-align: center;
-  margin-bottom: 10px;
-}
-.siteIntro p {
-  font-size: 14px;
-  text-align: center;
-  color: var(--colorPharagraf);
-}
-
-.watchBtn {
-  background-color: var(--colorButtons);
-  margin: 40px auto;
-  border-radius: 8px;
-  transition: all 0.5s ease;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 14px 24px;
-}
-
-.watchBtn p {
-  color: var(--colorWhite);
-}
-.watchBtn:hover {
-  scale: 1.1;
-  background-color: var(--colorWatchBtnHover);
-}
-.gridContainer {
-  margin-top: 120px;
-}
+@media screen and (max-width: 1024px) {
+  .navMenu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    padding: 96px 56px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 0.4s;
+  }
+  .showMenu .navItem {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .navItem {
+    transform: translateX(-150px);
+    visibility: hidden;
+    transition: transform 0.4s ease-out, visibility 0.4s;
+  }
+  .navItem:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .navItem:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .navItem:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .navItem:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .navItem:nth-child(5) {
+    transition-delay: 0.5s;
+  }
 
 .gridContainer .cardgrids {
   display: grid;
@@ -833,6 +851,25 @@ dialog input {
 }
 
 /* mediaQueryPart */
+=======
+  .navMenu ul {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .navClose {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .showMenu {
+    left: 0;
+  }
+}
 @media screen and (min-width: 1025px) {
   .navToggle,
   .navClose {
@@ -1295,3 +1332,4 @@ dialog input {
     height: 49px;
   }
 }
+

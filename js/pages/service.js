@@ -256,3 +256,4 @@ if (watchShow) {
     if (event.key === "ArrowLeft") embla3.scrollPrev();
   });
 }
+
